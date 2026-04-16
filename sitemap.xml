@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Home -->
+  <url>
+    <loc>https://www.npgc.in/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Core Pages -->
+  <url><loc>https://www.npgc.in/pages/thecollege.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/vision-mission.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/principal-desk.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/administration.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/accreditations-ranking.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/achievements.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/contact.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- Academics -->
+  <url><loc>https://www.npgc.in/pages/programs.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/syllabus.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/academicCalendar.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/classSchedule.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/onlinestudyMaterial.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/research.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/Faculty&amp;Dev.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/dislearn.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- Admissions -->
+  <url><loc>https://www.npgc.in/pages/admission-procedure.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/admissionSchedule.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/eligibilityCriteria.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/seatsOffered.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/fees.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/apply-online.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/prospectus.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- Examinations -->
+  <url><loc>https://www.npgc.in/pages/Exam&amp;Ass.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/examinationSchedule.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/exam-form.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/result.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- Training & Placement -->
+  <url><loc>https://www.npgc.in/pages/placement.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/placement-2026.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/placement-2025.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/placement-2024.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/drives.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/internships.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/skill-development.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/career-guidance.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/industry-connections.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/job-fairs.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- Alumni -->
+  <url><loc>https://www.npgc.in/pages/alumni.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- Infrastructure & Facilities -->
+  <url><loc>https://www.npgc.in/pages/infrastructure.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/about-infrastructure.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/laboratories.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/library.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/about-library.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/library-rules.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/hostel.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/canteen.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/medical.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/sports.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/museum.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- Student Life -->
+  <url><loc>https://www.npgc.in/pages/student-unit.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/grievance.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/socialmedia.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/news.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/notices.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/annual_reports.html</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
+
+  <!-- Departments -->
+  <url><loc>https://www.npgc.in/pages/Departments/Anthro.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/Departments/Botany.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/Departments/Chemistry.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/Departments/Commerce.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/Departments/Computer.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/Departments/DDUKBanking.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/Departments/DDUKSoftware.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/Departments/Economics.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/Departments/Education.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/Departments/English.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/Departments/Geography.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/Departments/Hindi.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/Departments/HIstory.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/Departments/Journalism.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/Departments/Management.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/Departments/Math.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/Departments/PhyEdu.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/Departments/Physics.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/Departments/PoliScie.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/Departments/Psycho.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/Departments/Stats.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/Departments/Zoology.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- Courses – UG -->
+  <url><loc>https://www.npgc.in/pages/Courses/BA.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/Courses/BAJMC.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/Courses/BBA.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/Courses/BBA-DIGITAL-BUSINESS.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/Courses/BCA.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/Courses/BCom.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/Courses/BCom-Honors.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/Courses/BCom-eCommerce.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/Courses/BSc-Biology.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/Courses/BSc-Mathematics.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/Courses/Bvoc-Banking-Finance.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/Courses/Bvoc-Hospital-Management.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/Courses/Bvoc-Software-Development-E-governance.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- Courses – PG -->
+  <url><loc>https://www.npgc.in/pages/Courses/MA-Anthropology.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/Courses/MA-Economics.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/Courses/MA-English.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/Courses/MA-Geography.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/Courses/MA-Political-Science.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/Courses/MA-Psychology.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/Courses/MCom.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/Courses/MPH-Public-Health.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/Courses/MSc-Anthropology.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/Courses/MVoc-Banking-Stock-Insurance.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/Courses/MVoc-Software-E-governance.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- Courses – PhD -->
+  <url><loc>https://www.npgc.in/pages/Courses/PhD-Education.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/Courses/PhD-English.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/Courses/PhD-Geography.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/Courses/PhD-History.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/Courses/PhD-Physical-Education.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- Courses – Diploma & Certificate -->
+  <url><loc>https://www.npgc.in/pages/Courses/Diploma-Analytical-Techniques-Instrumental-Analysis.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/Courses/Diploma-Banking-Finance-Community-College.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/Courses/Diploma-Data-Analytics.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/Courses/Diploma-Office-Automation-E-governance.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/Courses/Diploma-Remote-Sensing-GIS.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/Courses/Diploma-Retail-Management.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/Courses/Certificate-Blockchain-Technology.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/Courses/Certificate-Computer-Science.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/Courses/Certificate-Effective-Communication-English.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/Courses/Certificate-Forensic-Science.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/Courses/Certificate-Psychological-Counseling.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.npgc.in/pages/Courses/Certificate-Robotics-AI.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+</urlset>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAAC Reports | National P.G. College</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        body { overflow-x: hidden; width: 100%; position: relative; }
+        .hero-section { overflow-x: hidden; }
+    </style>
+</head>
+
+<body>
+    <div id="navbar-placeholder"></div>
+    <header class="hero-section" style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../assets/images/research-hero.jpg') no-repeat center center/cover !important; min-height: 400px; display: flex; align-items: center;">
+        <div class="gradient-overlay-v"></div>
+        <div class="container text-center text-white position-relative z-3">
+            <span class="badge rounded-pill bg-danger px-3 py-2 mb-4 tracking-widest text-xs uppercase text-white shadow-sm">
+                NAAC • Reports
+            </span>
+            <h1 class="main-title fw-black text-uppercase mb-3">NAAC Reports</h1>
+            <p class="lead mx-auto mb-5 opacity-75 main-description">
+                Official reports submitted to the National Assessment and Accreditation Council for institutional assessment.
+            </p>
+        </div>
+    </header>
+
+    <main class="py-5">
+        <div class="container py-lg-4">
+            <div class="row g-4">
+                <!-- Sidebar -->
+                <aside class="col-lg-3">
+                    <div id="naac-sidebar-placeholder"></div>
+                </aside>
+
+                <!-- Main Content -->
+                <div class="col-lg-9">
+                    <div class="mb-5">
+                        <span class="sec-label">Submissions</span>
+                        <h2 class="sec-h">Institutional Reports</h2>
+                        <div class="sec-stripe"></div>
+                    </div>
+
+                    <p class="mb-5 text-muted">
+                        Official reports submitted to the National Assessment and Accreditation Council (NAAC) for institutional accreditation and assessment.
+                    </p>
+
+                    <div class="row g-4">
+                        <div class="col-12">
+                            <div class="accent-left-card">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="report-icon" style="width: 45px; height: 45px; background: rgba(167, 24, 54, 0.1); border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                        <i class="fas fa-file-pdf text-danger"></i>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h6 class="fw-bold mb-1">IIAQ - Cycle 2</h6>
+                                    </div>
+                                    <a href="https://www.npgc.in/assets/NAAC/IIQA_Cycle2.pdf" class="btn btn-sm btn-danger rounded-pill px-3" target="_blank">View PDF</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="accent-left-card">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="report-icon" style="width: 45px; height: 45px; background: rgba(167, 24, 54, 0.1); border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                        <i class="fas fa-file-pdf text-danger"></i>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h6 class="fw-bold mb-1">SSR - Cycle 2</h6>
+                                    </div>
+                                    <a href="https://www.npgc.in/assets/NAAC/SSR_Cycle2.pdf" class="btn btn-sm btn-danger rounded-pill px-3" target="_blank">View PDF</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/loadcomponents.js"></script>
+    <script>
+        // Custom component loading for this page
+        document.addEventListener('DOMContentLoaded', async () => {
+            if (window.loadComponent) {
+                const bp = window.basePath || '';
+                await loadComponent("naac-sidebar-placeholder", `${bp}/components/naac-sidebar.html`);
+            }
+        });
+    </script>
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
+

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Fees Portal – NPGC Lucknow</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  
+    
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+  <div id="navbar-placeholder"></div>
+
+  <!-- ══════════════════════════  LOGIN CARD  ══════════════════════════ -->
+  <div class="container reveal my-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="card shadow">
+          <div class="row g-0">
+
+            <!-- LEFT -->
+            <div class="col-md-4 portal-panel-info">
+              <h3 class="mb-4">Fee Portal</h3>
+
+              <div class="portal-data-item">
+                <h5><i class="fas fa-university"></i> College</h5>
+                <p>National Post Graduate College<br>2, Rana Pratap Marg<br>Lucknow – 226001<br>Uttar Pradesh (India)</p>
+              </div>
+              <div class="portal-data-item">
+                <h5><i class="fas fa-clock"></i> Portal Hours</h5>
+                <p>Available 24 × 7<br>Payment support: Mon – Sat<br>8:00 AM – 4:00 PM</p>
+              </div>
+              <div class="portal-data-item">
+                <h5><i class="fas fa-headset"></i> Tech Support</h5>
+                <p>
+                  <a href="mailto:helpdesk@sritechnocrat.com" class="fw-semibold text-white">helpdesk@sritechnocrat.com</a><br>
+                  <a href="tel:7080126669" class="fw-semibold text-white">7080126669</a>
+                </p>
+              </div>
+
+              <div class="portal-qlink-rows mt-4">
+                <div class="portal-qlink-row">
+                  <div class="portal-qlink-icon"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+                  <div class="portal-qlink-text"><strong>View Dues</strong><span>Login to check pending fees</span></div>
+                </div>
+                <div class="portal-qlink-row">
+                  <div class="portal-qlink-icon"><i class="fa-solid fa-credit-card"></i></div>
+                  <div class="portal-qlink-text"><strong>Pay Online</strong><span>UPI · Card · Net Banking</span></div>
+                </div>
+                <div class="portal-qlink-row">
+                  <div class="portal-qlink-icon"><i class="fa-solid fa-receipt"></i></div>
+                  <div class="portal-qlink-text"><strong>Download Receipt</strong><span>Instant PDF after payment</span></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- RIGHT -->
+            <div class="col-md-8 portal-panel-form">
+              <h2 class="mb-4">Sign In to Pay Fees</h2>
+
+               <div class="alert alert-info d-flex align-items-center gap-2" role="alert">
+  <i class="fa-solid fa-circle-info"></i>
+  <span>
+   Please enter your roll number and mobile number to login. </span>
+</div>
+
+              <div class="mb-3">
+                <label class="form-label" for="rollNo">Roll Number <span class="text-danger">*</span></label>
+                <div class="input-group">
+                  <span class="input-group-text"><i class="fa-solid fa-id-card"></i></span>
+                  <input type="text" class="form-control" id="rollNo" placeholder="Enter your roll number" autocomplete="off" required />
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label" for="mobile">Registered Mobile Number <span class="text-danger">*</span></label>
+                <div class="input-group">
+                  <span class="input-group-text"><i class="fa-solid fa-mobile-screen-button"></i></span>
+                  <input type="tel" class="form-control" id="mobile" placeholder="10-digit mobile number" autocomplete="off" maxlength="10" required />
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label" for="captchaInput">Captcha <span class="text-danger">*</span></label>
+                <div class="captcha-row d-md-flex gap-3">
+                  <div class="input-group mb-2 mb-md-0" style="flex: 1;">
+                    <span class="input-group-text"><i class="fa-solid fa-shield-halved"></i></span>
+                    <input type="text" class="form-control" id="captchaInput" placeholder="Enter the code shown" autocomplete="off" required />
+                  </div>
+                  <div class="captcha-wrap d-flex align-items-center gap-2 border rounded-3 px-3 py-2 bg-light" style="flex: 1;">
+                    <div class="captcha-img-box position-relative" id="captchaBox" title="Click to refresh captcha" style="cursor: pointer;">
+                      <img id="captchaImg" src="https://npgcfees.in/stuadmis/captcha.php?rand=1961573642" alt="Captcha" height="30" />
+                    </div>
+                    <button class="btn btn-sm btn-outline-secondary border-0" id="refreshCaptcha" type="button" title="Refresh captcha">
+                      <i class="fa-solid fa-rotate-right"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <button class="btn mb-5 btn-primary w-100 mt-1" id="loginBtn" type="button">
+                <span class="btn-txt">Access Fee Portal &nbsp;<i class="fa-solid fa-arrow-right-to-bracket"></i></span>
+                <span class="spinner-sm ms-2"></span>
+              </button>
+
+             <div class="alert alert-info d-flex align-items-start gap-2">
+  <i class="fa-solid fa-circle-info mt-1"></i>
+  <div>
+    For technical support mail 
+    <a href="mailto:helpdesk@sritechnocrat.com" class="fw-semibold text-decoration-none">
+      helpdesk@sritechnocrat.com
+    </a> 
+    or call 
+    <a href="tel:7080126669" class="fw-semibold text-decoration-none">
+      7080126669
+    </a>.
+  </div>
+</div>
+
+<div class="alert alert-warning d-flex align-items-start gap-2">
+  <i class="fa-solid fa-triangle-exclamation mt-1"></i>
+  <div>
+    <strong>Last Date Reminder — </strong>
+    Pay before the deadline to avoid a late fine. Keep your transaction ID safe after payment.
+  </div>
+</div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════  STEPS & CATEGORIES  ══════════════════════════ -->
+<section class="py-5">
+  <div class="container">
+    <div class="row g-5">
+
+      <!-- How to Pay -->
+      <div class="col-lg-6">
+        <div class="mb-4">
+          <span class="sec-label">Quick Guide</span>
+          <h2 class="sec-h">How to <span class="text-danger">Pay Fees</span></h2>
+          <div class="sec-stripe"></div>
+        </div>
+
+        <div class="row g-3">
+
+          <div class="col-md-6 d-flex">
+            <div class="border rounded-3 p-3 shadow-sm w-100 h-100 fee-step-card">
+              <div class="fee-step-badge">1</div>
+              <i class="fa-solid fa-right-to-bracket fee-step-icon"></i>
+              <p class="mb-0 text-secondary">
+                <strong>Login:</strong> Enter Roll No., mobile number & captcha.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 d-flex">
+            <div class="border rounded-3 p-3 shadow-sm w-100 h-100 fee-step-card">
+              <div class="fee-step-badge">2</div>
+              <i class="fa-solid fa-file-invoice-dollar fee-step-icon"></i>
+              <p class="mb-0 text-secondary">
+                <strong>View Dues:</strong> Check pending fees.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 d-flex">
+            <div class="border rounded-3 p-3 shadow-sm w-100 h-100 fee-step-card">
+              <div class="fee-step-badge">3</div>
+              <i class="fa-solid fa-credit-card fee-step-icon"></i>
+              <p class="mb-0 text-secondary">
+                <strong>Payment:</strong> Pay via UPI/Card/Net Banking.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 d-flex">
+            <div class="border rounded-3 p-3 shadow-sm w-100 h-100 fee-step-card">
+              <div class="fee-step-badge">4</div>
+              <i class="fa-solid fa-receipt fee-step-icon"></i>
+              <p class="mb-0 text-secondary">
+                <strong>Receipt:</strong> Download receipt instantly.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Categories -->
+      <div class="col-lg-6">
+        <div class="mb-4">
+          <span class="sec-label">What You Can Pay</span>
+          <h2 class="sec-h">Fee <span class="text-danger">Categories</span></h2>
+          <div class="sec-stripe"></div>
+        </div>
+
+        <div class="row g-3">
+
+          <div class="col-md-6 d-flex">
+            <div class="border rounded-3 p-3 shadow-sm w-100 h-100 d-flex gap-3">
+              <i class="fa-solid fa-graduation-cap text-danger mt-1"></i>
+              <div>
+                <h6 class="mb-1 fw-bold">Tuition Fee</h6>
+                <p class="mb-0 text-secondary small">
+                  Semester-wise tuition charges.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 d-flex">
+            <div class="border rounded-3 p-3 shadow-sm w-100 h-100 d-flex gap-3">
+              <i class="fa-solid fa-pen-to-square text-danger mt-1"></i>
+              <div>
+                <h6 class="mb-1 fw-bold">Exam Fee</h6>
+                <p class="mb-0 text-secondary small">
+                  Examination fees.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 d-flex">
+            <div class="border rounded-3 p-3 shadow-sm w-100 h-100 d-flex gap-3">
+              <i class="fa-solid fa-building-columns text-danger mt-1"></i>
+              <div>
+                <h6 class="mb-1 fw-bold">Development</h6>
+                <p class="mb-0 text-secondary small">
+                  Infrastructure charges.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 d-flex">
+            <div class="border rounded-3 p-3 shadow-sm w-100 h-100 d-flex gap-3">
+              <i class="fa-solid fa-layer-group text-danger mt-1"></i>
+              <div>
+                <h6 class="mb-1 fw-bold">Other Charges</h6>
+                <p class="mb-0 text-secondary small">
+                  Library, sports & misc.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+  <div id="footer-placeholder"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/loadcomponents.js"></script>
+  <script src="../assets/js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        /* ── Captcha refresh ── */
+        const refreshBtn = document.getElementById('refreshCaptcha');
+        const captchaBox = document.getElementById('captchaBox');
+        const img = document.getElementById('captchaImg');
+        const icon = refreshBtn?.querySelector('i');
+
+        function refresh() {
+            const newSrc = 'https://npgcfees.in/stuadmis/captcha.php?rand=' + Date.now();
+            if (icon) {
+                icon.style.transition = 'transform 0.5s ease';
+                icon.style.transform = 'rotate(360deg)';
+                setTimeout(() => { icon.style.transition = 'none'; icon.style.transform = 'rotate(0deg)'; }, 520);
+            }
+            img.style.opacity = '0.35';
+            img.src = newSrc;
+            img.onload = () => img.style.opacity = '1';
+        }
+        if (refreshBtn) refreshBtn.addEventListener('click', refresh);
+        if (captchaBox) captchaBox.addEventListener('click', refresh);
+
+        /* ── Login submit ── */
+        const btn = document.getElementById('loginBtn');
+        if (btn) {
+            btn.addEventListener('click', function () {
+                const roll = document.getElementById('rollNo').value.trim();
+                const mobile = document.getElementById('mobile').value.trim();
+                const cap = document.getElementById('captchaInput').value.trim();
+                if (!roll || !mobile || !cap) {
+                    alert('All fields are required.');
+                    return;
+                }
+                btn.classList.add('loading');
+                btn.disabled = true;
+                setTimeout(() => {
+                    const form = document.createElement('form');
+                    form.method = 'POST'; form.action = 'https://npgcfees.in/stuadmis/mlogin.php';
+                    [['roll', roll], ['mobile', mobile], ['captcha', cap]].forEach(([n, v]) => {
+                        const inp = document.createElement('input');
+                        inp.type = 'hidden'; inp.name = n; inp.value = v; form.appendChild(inp);
+                    });
+                    document.body.appendChild(form); form.submit();
+                }, 900);
+            });
+        }
+
+        /* ── Reveal on scroll ── */
+        const revObs = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) { entry.target.classList.add('active'); revObs.unobserve(entry.target); }
+            });
+        }, { threshold: 0.12 });
+        document.querySelectorAll('.reveal').forEach(el => revObs.observe(el));
+
+        /* ── Staggered cards ── */
+        const allCards = document.querySelectorAll('.fee-step-card, .border.rounded-3.p-3.shadow-sm.d-flex');
+        const scObs = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const idx = Array.from(allCards).indexOf(entry.target);
+                    entry.target.style.transitionDelay = (idx % 4) * 0.1 + 's';
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                    scObs.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+        allCards.forEach(c => {
+            c.style.opacity = '0'; c.style.transform = 'translateY(24px)';
+            c.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            scObs.observe(c);
+        });
+    });
+  </script>
+</body>
+</html>

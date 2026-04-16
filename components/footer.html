@@ -1,0 +1,161 @@
+<style>
+footer {
+  background: linear-gradient(90deg, #000000 0%, #8b1a2c 50%, #000000 100%);
+  color: white;
+  padding: 50px 20px 20px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto 30px;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+.footer-section h4 {
+  margin-bottom: 15px;
+  font-size: 1.1em;
+}
+
+.footer-section p {
+  opacity: 0.9;
+  line-height: 1.8;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section li {
+  margin-bottom: 10px;
+}
+
+.footer-section a {
+  color: white;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.footer-section a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  transition: all 0.3s ease;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.social-links a:hover {
+  background: rgba(255, 255, 255, 0.4);
+  transform: translateY(-3px) scale(1.1);
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.233);
+  padding-top: 20px;
+  text-align: center;
+  opacity: 0.9;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-developers {
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.footer-developers span {
+  font-weight: 600;
+}
+</style>
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-section">
+      <h4>Terms & Policies</h4>
+      <ul>
+        <li><a href="../pages/disclaimer.html">Disclaimer</a></li>
+        <li><a href="../pages/privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="../pages/copyright-policy.html">Copyright Policy</a></li>
+        <li><a href="../pages/terms-conditions.html">Terms &amp; Conditions</a></li>
+        <li><a href="../pages/hyperlinking-policy.html">Hyperlinking Policy</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Important Links</h4>
+      <ul>
+        <li><a href="https://lkouniv.ac.in" target="_blank" rel="noopener">University of Lucknow</a></li>
+        <li><a href="https://www.education.gov.in/" target="_blank" rel="noopener">Ministry of Education</a></li>
+        <li><a href="https://ugc.gov.in" target="_blank" rel="noopener">University Grants Commission (UGC)</a></li>
+        <li><a href="https://naac.gov.in/" target="_blank" rel="noopener">NAAC</a></li>
+        <li><a href="https://www.ignou.ac.in/" target="_blank" rel="noopener">IGNOU</a></li>
+        <li><a href="https://www.uprtou.ac.in/" target="_blank" rel="noopener">UPRTOU</a></li>
+        <li><a href="https://scholarship.up.gov.in/" target="_blank" rel="noopener">State Scholarships</a></li>
+        <li><a href="https://employmentnews.gov.in/" target="_blank" rel="noopener">Employment News</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Our Location</h4>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.5!2d80.9409029!3d26.8567355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfd0a819131cb:0x11553d04f3a32d9c!2sNational%20Post%20Graduate%20College!5e0!3m2!1sen!2sin!4v1234567890!5m2!1sen!2sin"
+        width="100%" height="200" style="border: 0; border-radius: 6px;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="footer-section">
+      <h4>Contact us</h4>
+      <p>
+        National P.G. College<br>
+        2, Rana Pratap Marg<br>
+        Lucknow 226001, India<br>
+        Phone: +91 522 4021304<br>
+        Email: <a href="mailto:support@npgc.in">support@npgc.in</a>
+      </p>
+      <div class="social-links mt-3">
+        <a href="https://www.linkedin.com/school/national-pg-college/" target="_blank" title="LinkedIn"><i
+            class="fab fa-linkedin"></i></a>
+        <a href="https://www.facebook.com/npgcin" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.youtube.com/@npgcin14" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.instagram.com/npgcin" target="_blank" title="Instagram"><i
+            class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 National P.G. College. All Rights Reserved.</p>
+    <p class="footer-developers">
+      Developed by BCA Students &mdash;
+      <span>Krishna Agarwal</span>,
+      <span>Pushpesh Srivastava</span>,
+      <span>Akshat Sharma</span> &amp;
+      <span>Aditi Srivastava</span>
+      <span>(Class of 2026)</span>
+    </p>
+  </div>
+</footer>

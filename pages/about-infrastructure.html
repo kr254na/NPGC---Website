@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infrastructure & Facilities | National PG College</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <style>
+        .hero-section {
+            background: url('../assets/images/infrastructure-hero.jpg') no-repeat center center/cover !important;
+        }
+        .facility-card {
+    background: #fff;
+    color: #000;
+    min-height: 120px;
+    transition: 0.3s;
+}
+
+/* Remove Bootstrap blue */
+.nav-pills .nav-link {
+    color: #000;
+}
+
+/* Active (your theme color) */
+.nav-pills .nav-link.active {
+    background-color: #dc3545 !important;
+    color: #fff !important;
+    border-color: #dc3545 !important;
+}
+
+/* Hover */
+.facility-card:hover {
+    border-color: #dc3545;
+}
+    </style>
+</head>
+
+<body>
+    <div id="navbar-placeholder"></div>
+
+    <header class="hero-section">
+
+        <div class="gradient-overlay-v"></div>
+
+        <div class="container text-center text-white position-relative z-3">
+            <span class="badge rounded-pill bg-danger px-3 py-2 mb-4 tracking-widest text-xs uppercase text-white shadow-sm">
+                Campus • Facilities • Learning
+            </span>
+            <h1 class="main-title fw-black text-uppercase mb-3">
+                Campus<br>Infrastructure
+            </h1>
+
+            <p class="lead mx-auto mb-5 opacity-75 main-description">
+                State-of-the-art laboratories, modern classrooms, and a vibrant campus designed to foster academic and personal growth.
+            </p>
+
+            <div class="d-flex justify-content-center gap-3 mb-5 pb-5">
+                <a href="#infra-overview-id" class="btn btn-menu btn-lg px-5 py-3 fw-bold">Campus Overview</a>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Overview -->
+    <div class="container-fluid px-lg-5">
+    <section class="infra-overview" id="infra-overview-id">
+        <div class="text-center mt-5 reveal">
+          <h2 class="sec-h">Campus Infrastructure Overview</h2>
+          <div class="sec-stripe"></div>
+        </div>
+
+        <div class="overview-grid">
+            <div class="overview-card d-flex gap-2 flex-column justify-content-center align-items-center">
+                <div class="icon-wrapper">
+                    <i class="text-danger fs-1 bg-danger-subtle p-3 rounded-circle fa-solid fa-building-columns"></i>
+                </div>
+                <h3 class="fw-bold">Academic Growth</h3>
+                <p class="text-secondary text-center">Faculty of Science, Management Studies, and Computer Science were introduced with required cutting-edge laboratories to keep pace with growing academic demands.</p>
+            </div>
+
+            <div class="overview-card d-flex gap-2 flex-column justify-content-center align-items-center">
+                <div class="icon-wrapper">
+                    <i class="text-danger fs-1 bg-danger-subtle p-3 rounded-circle fa-solid fa-landmark"></i>
+                </div>
+                <h3 class="fw-bold">Major Additions</h3>
+                <p class="text-secondary text-center">Immense additions include an 800-seater auditorium, Evaluation & Secrecy cells, Administrative block, Central Library, underground parking, girls' hostel, and sports grounds.</p>
+            </div>
+
+            <div class="overview-card d-flex gap-2 flex-column justify-content-center align-items-center">
+                <div class="icon-wrapper">
+                    <i class="text-danger fs-1 bg-danger-subtle p-3 rounded-circle fa-solid fa-people-group"></i>
+                </div>
+                <h3 class="fw-bold">Student Facilities</h3>
+                <p class="text-secondary text-center">Every academic block features dedicated office and common rooms, with separate well-maintained common rooms and washrooms for female students, male students, and staff.</p>
+            </div>
+
+            <div class="overview-card d-flex gap-2 flex-column justify-content-center align-items-center">
+                <div class="icon-wrapper">
+                    <i class="text-danger fs-1 bg-danger-subtle p-3 rounded-circle fa-solid fa-wheelchair"></i>
+                </div>
+                <h3 class="fw-bold">Inclusivity & Access</h3>
+                <p class="text-secondary text-center">Fully accessible campus with elevators and ramps. Special facilities include audio books, screen-readers, braille displays, and specialized support for dyslexic and hearing-impaired students.</p>
+            </div>
+        </div>
+    </section>
+    
+  <section class="facilities-section py-5">
+    <div class="container">
+
+        <!-- Heading -->
+        <div class="text-center mb-5 reveal">
+        <h2 class="sec-h text-center">Major Facilities</h2>
+        <div class="sec-stripe"></div>
+        </div>
+
+        <!-- Tabs -->
+        <div class="nav nav-pills row mt-4 g-3 mb-4" role="tablist">
+
+            <div class="col-6 col-md-4 col-lg d-flex">
+                <button class="nav-link w-100 h-100 text-center border rounded-4 py-4 facility-card active"
+                    data-bs-toggle="pill" data-bs-target="#library" type="button">
+                    <i class="fa-solid fa-book d-block mb-2"></i>
+                    Library
+                </button>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg d-flex">
+                <button class="nav-link w-100 h-100 text-center border rounded-4 py-4 facility-card"
+                    data-bs-toggle="pill" data-bs-target="#labs" type="button">
+                    <i class="fa-solid fa-flask d-block mb-2"></i>
+                    Laboratories
+                </button>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg d-flex">
+                <button class="nav-link w-100 h-100 text-center border rounded-4 py-4 facility-card"
+                    data-bs-toggle="pill" data-bs-target="#sports" type="button">
+                    <i class="fa-solid fa-football d-block mb-2"></i>
+                    Sports
+                </button>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg d-flex">
+                <button class="nav-link w-100 h-100 text-center border rounded-4 py-4 facility-card"
+                    data-bs-toggle="pill" data-bs-target="#hostel" type="button">
+                    <i class="fa-solid fa-bed d-block mb-2"></i>
+                    Hostel
+                </button>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg d-flex">
+                <button class="nav-link w-100 h-100 text-center border rounded-4 py-4 facility-card"
+                    data-bs-toggle="pill" data-bs-target="#ict" type="button">
+                    <i class="fa-solid fa-desktop d-block mb-2"></i>
+                    Smart Classrooms
+                </button>
+            </div>
+
+        </div>
+
+        <!-- Content -->
+        <div class="tab-content">
+
+            <div class="tab-pane fade show active" id="library">
+                <div class="p-4 border rounded-4 shadow-sm">
+                    <h4 class="fw-bold mb-3">Central Library</h4>
+                    <p class="text-secondary mb-0">The college boasts a fully automated central library that serves as a hub of knowledge and academic excellence. It houses a vast collection of thousands of books across diverse disciplines, along with a wide range of national and international journals. In addition to its rich physical resources, the library provides access to numerous e-resources, including e-books, online journals, and digital databases, enabling students and faculty to stay updated with the latest information and research. Equipped with modern infrastructure and user-friendly systems, the library ensures a seamless and efficient learning experience for all its users.</p>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="labs">
+                <div class="p-4 border rounded-4 shadow-sm">
+                    <h4 class="fw-bold mb-3">Advanced Laboratories</h4>
+                    <p class="text-secondary mb-0">The college boasts a fully automated central library that serves as a hub of knowledge and academic excellence. It houses a vast collection of thousands of books across diverse disciplines, along with a wide range of national and international journals. In addition to its rich physical resources, the library provides access to numerous e-resources, including e-books, online journals, and digital databases, enabling students and faculty to stay updated with the latest information and research. Equipped with modern infrastructure and user-friendly systems, the library ensures a seamless and efficient learning experience for all its users. The institution is also equipped with modern laboratories for Science, Computer Science, Commerce, and Research. These labs are designed with advanced equipment and updated technology to provide practical exposure and hands-on learning opportunities. They support innovation, experimentation, and skill development, helping students bridge the gap between theoretical knowledge and real-world application.</p>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="sports">
+                <div class="p-4 border rounded-4 shadow-sm">
+                    <h4 class="fw-bold mb-3">Sports Facilities</h4>
+                    <p class="text-secondary mb-0">The college offers excellent sports and fitness facilities, including well-maintained playgrounds, a spacious indoor sports hall, and a fully equipped gymnasium. These facilities encourage students to maintain an active and healthy lifestyle while nurturing their athletic talents. The institution also regularly organizes and participates in inter-college tournaments, providing students with opportunities to showcase their skills, build teamwork, and develop a spirit of sportsmanship and healthy competition.</p>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="hostel">
+                <div class="p-4 border rounded-4 shadow-sm">
+                    <h4 class="fw-bold mb-3">Student Hostel</h4>
+                    <p class="text-secondary mb-0">The college provides a secure and comfortable hostel facility for girls, designed to ensure a safe and supportive living environment. The hostel is equipped with round-the-clock CCTV surveillance and reliable security systems, offering peace of mind to both students and their families. With high-speed Wi-Fi connectivity and modern amenities such as well-furnished rooms, hygienic dining facilities, and common recreational areas, the hostel ensures a convenient and homely atmosphere that supports both academic focus and overall well-being.</p>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="ict">
+                <div class="p-4 border rounded-4 shadow-sm">
+                    <h4 class="fw-bold mb-3">ICT & Smart Classrooms</h4>
+                    <p class="text-secondary mb-0">The college is committed to integrating technology into the learning process through its ICT and Smart Classrooms. These modern educational spaces are equipped with advanced audio-visual aids, including projectors, interactive smart boards, and sound systems, creating an engaging and dynamic learning environment. The campus-wide Wi-Fi connectivity ensures seamless access to digital resources and online learning platforms. These facilities support innovative teaching methodologies, facilitate interactive learning, and enable students to engage with digital content effectively, preparing them for a technology-driven future.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+    <!-- Infrastructure Highlights -->
+   <section class="infra-cards-section container mt-5 mb-5 d-flex flex-wrap gap-3">
+
+    <div class="col d-flex">
+        <div class="infra-card w-100 border border-danger rounded-4 shadow-sm p-4 text-center h-100">
+            <i class="fa-solid fa-building fs-1 text-danger mb-3 bg-danger-subtle p-3 rounded-circle shadow-sm"></i>
+            <h2 class="fw-bold">Smart Classrooms</h2>
+            <p class="text-secondary">Digitally enabled classrooms with projectors and interactive boards.</p>
+        </div>
+    </div>
+
+    <div class="col d-flex">
+        <div class="infra-card w-100 border border-danger rounded-4 shadow-sm p-4 text-center h-100">
+            <i class="fa-solid fa-wifi fs-1 text-danger mb-3 bg-danger-subtle p-3 rounded-circle shadow-sm"></i>
+            <h2 class="fw-bold">Campus Wi-Fi</h2>
+            <p class="text-secondary">High-speed internet connectivity across the campus.</p>
+        </div>
+    </div>
+
+    <div class="col d-flex">
+        <div class="infra-card w-100 border border-danger rounded-4 shadow-sm p-4 text-center h-100">
+            <i class="fa-solid fa-book-open fs-1 text-danger mb-3 bg-danger-subtle p-3 rounded-circle shadow-sm"></i>
+            <h2 class="fw-bold">Central Library</h2>
+            <p class="text-secondary">Rich collection of books, journals, and digital resources.</p>
+        </div>
+    </div>
+
+    <div class="col d-flex">
+        <div class="infra-card w-100 border border-danger rounded-4 shadow-sm p-4 text-center h-100">
+            <i class="fa-solid fa-dumbbell fs-1 text-danger mb-3 bg-danger-subtle p-3 rounded-circle shadow-sm"></i>
+            <h2 class="fw-bold">Sports Complex</h2>
+            <p class="text-secondary">Facilities for indoor and outdoor sports activities.</p>
+        </div>
+    </div>
+
+</section>
+
+<section class="container mt-5 mb-5">
+    <div class="text-center mb-5 reveal">
+    <h2 class="sec-h text-center">Campus Gallery</h2>
+    <div class="sec-stripe"></div>
+    </div>
+
+    <div class="row mt-5 g-3">
+
+        <div class="col-6 col-md-4 col-lg-3">
+            <div class="gallery-item" data-hd="../assets/images/infrastructure-1.jpg">
+                <img src="../assets/images/infrastructure-1.jpg" class="img-fluid rounded" alt="Infrastructure">
+            </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+            <div class="gallery-item" data-hd="../assets/images/infrastructure-2.jpg">
+                <img src="../assets/images/infrastructure-2.jpg" class="img-fluid rounded" alt="Infrastructure">
+            </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+            <div class="gallery-item" data-hd="../assets/images/infrastructure-3.jpg">
+                <img src="../assets/images/infrastructure-3.jpg" class="img-fluid rounded" alt="Infrastructure">
+            </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+            <div class="gallery-item" data-hd="../assets/images/infrastructure-4.jpg">
+                <img src="../assets/images/infrastructure-4.jpg" class="img-fluid rounded" alt="Infrastructure">
+            </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+            <div class="gallery-item" data-hd="../assets/images/infrastructure-5.jpg">
+                <img src="../assets/images/infrastructure-5.jpg" class="img-fluid rounded" alt="Infrastructure">
+            </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+            <div class="gallery-item" data-hd="../assets/images/infrastructure-6.jpg">
+                <img src="../assets/images/infrastructure-6.jpg" class="img-fluid rounded" alt="Infrastructure">
+            </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+            <div class="gallery-item" data-hd="../assets/images/playground.jpg">
+                <img src="../assets/images/playground.jpg" class="img-fluid rounded" alt="Playground">
+            </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+            <div class="gallery-item" data-hd="../assets/images/hostel-hero.jpg">
+                <img src="../assets/images/hostel-hero.jpg" class="img-fluid rounded" alt="Hostel">
+            </div>
+        </div>
+
+    </div>
+</section>
+</div>
+    <div id="footer-placeholder"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/loadcomponents.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

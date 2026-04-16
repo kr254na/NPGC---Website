@@ -1,0 +1,134 @@
+<div class="card shadow-sm border-0">
+    <div class="card-header bg-white py-3 border-bottom">
+        <h5 class="fw-bold mb-0 text-maroon"><i class="fas fa-file-contract me-2"></i>Recent Tenders</h5>
+    </div>
+    <div class="card-body p-0">
+        <div class="list-group list-group-flush" id="sidebar-tender-list">
+
+            <a href="tender-printing-supply-of-college-magazine-date-extended.html" class="list-group-item list-group-item-action py-3">
+                <div class="d-flex w-100 justify-content-between mb-1">
+                    <span class="badge bg-danger">E-Tender</span>
+                    <small class="text-muted">Apr 10</small>
+                </div>
+                <h6 class="mb-1 fw-bold">Printing &amp; Supply of Magazine (Extended)</h6>
+            </a>
+
+            <a href="tender-supply-of-desktop-computer-interactive-panel-ups.html" class="list-group-item list-group-item-action py-3">
+                <div class="d-flex w-100 justify-content-between mb-1">
+                    <span class="badge bg-danger">E-Tender</span>
+                    <small class="text-muted">Apr 10</small>
+                </div>
+                <h6 class="mb-1 fw-bold">Supply of Desktop, Panel &amp; UPS</h6>
+            </a>
+
+            <a href="tender-interior-renovation-for-cvfs.html" class="list-group-item list-group-item-action py-3">
+                <div class="d-flex w-100 justify-content-between mb-1">
+                    <span class="badge bg-danger">E-Tender</span>
+                    <small class="text-muted">Apr 10</small>
+                </div>
+                <h6 class="mb-1 fw-bold">Interior Renovation for CVFS</h6>
+            </a>
+
+            <a href="tender-quotation-for-cursive-writing-stainless-steel.html" class="list-group-item list-group-item-action py-3">
+                <div class="d-flex w-100 justify-content-between mb-1">
+                    <span class="badge bg-secondary">Quotation</span>
+                    <small class="text-muted">Apr 10</small>
+                </div>
+                <h6 class="mb-1 fw-bold">Quotation: Cursive Writing Stainless Steel</h6>
+            </a>
+
+            <a href="tender-tender-of-college-canteen-and-hostel-mess.html" class="list-group-item list-group-item-action py-3">
+                <div class="d-flex w-100 justify-content-between mb-1">
+                    <span class="badge bg-danger">E-Tender</span>
+                    <small class="text-muted">Apr 10</small>
+                </div>
+                <h6 class="mb-1 fw-bold">College Canteen &amp; Hostel Mess</h6>
+            </a>
+
+            <a href="tender-requirement-of-annual-planner-diary.html" class="list-group-item list-group-item-action py-3">
+                <div class="d-flex w-100 justify-content-between mb-1">
+                    <span class="badge bg-secondary">Quotation</span>
+                    <small class="text-muted">Apr 10</small>
+                </div>
+                <h6 class="mb-1 fw-bold">Annual Planner (Diary)</h6>
+            </a>
+
+            <a href="tender-requirement-of-chemicals-and-equipments-in-chemistry-lab.html" class="list-group-item list-group-item-action py-3">
+                <div class="d-flex w-100 justify-content-between mb-1">
+                    <span class="badge bg-secondary">Quotation</span>
+                    <small class="text-muted">Apr 10</small>
+                </div>
+                <h6 class="mb-1 fw-bold">Chemicals &amp; Equipment – Chemistry Lab</h6>
+            </a>
+
+            <a href="tender-tender-notice-for-unipole-and-digital-display.html" class="list-group-item list-group-item-action py-3">
+                <div class="d-flex w-100 justify-content-between mb-1">
+                    <span class="badge bg-danger">E-Tender</span>
+                    <small class="text-muted">Apr 10</small>
+                </div>
+                <h6 class="mb-1 fw-bold">Unipole &amp; Digital Display</h6>
+            </a>
+
+            <a href="tender-tender-for-cctv-cameras.html" class="list-group-item list-group-item-action py-3">
+                <div class="d-flex w-100 justify-content-between mb-1">
+                    <span class="badge bg-danger">E-Tender</span>
+                    <small class="text-muted">Apr 10</small>
+                </div>
+                <h6 class="mb-1 fw-bold">CCTV Cameras</h6>
+            </a>
+
+            <a href="tender-tender-notice-for-refilling-fire-extinguisher.html" class="list-group-item list-group-item-action py-3">
+                <div class="d-flex w-100 justify-content-between mb-1">
+                    <span class="badge bg-danger">E-Tender</span>
+                    <small class="text-muted">Apr 10</small>
+                </div>
+                <h6 class="mb-1 fw-bold">Refilling Fire Extinguisher</h6>
+            </a>
+
+        </div>
+    </div>
+    <div class="card-footer bg-white border-top-0 py-3 text-center">
+        <a href="../pages/e-tender.html" class="text-decoration-none fw-bold small text-maroon hover-underline" id="tender-sidebar-viewall">
+            View All Tenders <i class="fas fa-chevron-right ms-1"></i>
+        </a>
+    </div>
+</div>
+
+<style>
+.text-maroon { color: #8b0000; }
+.hover-underline:hover { text-decoration: underline !important; }
+#sidebar-tender-list .list-group-item {
+    transition: all 0.2s ease;
+    border-left: 3px solid transparent;
+}
+#sidebar-tender-list .list-group-item:hover {
+    background-color: #f8f9fa;
+    border-left: 3px solid #8b0000;
+    padding-left: 1.25rem !important;
+}
+</style>
+
+<script>
+(function(){
+    // Fix links relative to where this component is consumed from
+    var isSubDir = window.location.pathname.includes('/pages/e-tender/');
+
+    var viewAll = document.getElementById('tender-sidebar-viewall');
+    if (viewAll) {
+        viewAll.setAttribute('href', isSubDir ? '../e-tender.html' : 'pages/e-tender.html');
+    }
+
+    if (!isSubDir) {
+        // Prepend the e-tender subfolder path when loaded from outside
+        var container = document.getElementById('sidebar-tender-list');
+        if (container) {
+            container.querySelectorAll('a').forEach(function(link){
+                var href = link.getAttribute('href');
+                if (href && !href.startsWith('http')) {
+                    link.setAttribute('href', 'pages/e-tender/' + href);
+                }
+            });
+        }
+    }
+})();
+</script>

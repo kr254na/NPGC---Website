@@ -1,0 +1,501 @@
+<style>
+/* ================================================================
+   NPGC NAVBAR
+   - Top Strip: Black, social icons left, datetime right (ORIGINAL)
+   - Logo Header: White, 3 logos (ORIGINAL)
+   - Nav Bar: Black with red accent, KERALA UNIVERSITY-style menu layout
+   ================================================================ */
+
+#navbar-placeholder {
+    width: 100%;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* ---- 1. Top Social Strip (ORIGINAL - unchanged) ---- */
+#navbar-placeholder .social-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+    background: linear-gradient(to right, #000000, #1a1a1a);
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+#navbar-placeholder .social-links-top {
+    display: flex;
+    gap: 10px;
+}
+
+#navbar-placeholder .social-icon-top {
+    font-size: 15px;
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    font-weight: bold;
+}
+
+#navbar-placeholder .social-icon-top:hover {
+    background-color: #8b1a2c;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+#navbar-placeholder .date-time-container {
+    font-size: 15px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.7);
+    letter-spacing: 0.5px;
+}
+
+/* ---- 2. Logo Header (ORIGINAL - unchanged) ---- */
+#navbar-placeholder .main-header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+}
+
+#navbar-placeholder .responsive-logo {
+    width: 130px;
+}
+
+#navbar-placeholder .college-mid-logo {
+    width: 600px;
+}
+
+/* Base resets restricted to navbar-placeholder */
+#navbar-placeholder * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---- 3. Nav Bar - Kerala University Style Menu Layout ---- */
+#navbar-placeholder .navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    padding: 0;
+    height: 48px;
+    background-color: #000;
+    border-bottom: 3px solid #8b1a2c;
+    position: relative;
+    z-index: 1000;
+    position: sticky;
+    top: 0;
+}
+
+#navbar-placeholder .fa-bars {
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+    padding: 10px 16px;
+    z-index: 1001;
+    align-self: center;
+}
+
+/* ---- 4. Nav Menu - centered, full-width spread ---- */
+#navbar-placeholder .nav-menu {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: center;
+    align-items: stretch;
+    gap: 0;
+    z-index: 1000;
+}
+
+#navbar-placeholder .nav-menu > li {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    max-width: 130px;
+}
+
+#navbar-placeholder .nav-menu > li > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    padding: 0 10px;
+    height: 100%;
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 13.5px;
+    font-weight: 500;
+    transition: background 0.25s ease, color 0.25s ease;
+    white-space: nowrap;
+    text-align: center;
+    border-right: 1px solid rgba(255,255,255,0.07);
+}
+
+#navbar-placeholder .nav-menu > li:first-child > a {
+    border-left: 1px solid rgba(255,255,255,0.07);
+}
+
+#navbar-placeholder .nav-menu > li > a:hover {
+    background: #8b1a2c;
+    color: #fff;
+}
+
+/* Dropdown caret indicator */
+#navbar-placeholder .nav-menu > li:has(.sub-menu) > a::after {
+    content: '\f107';
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 10px;
+    opacity: 0.6;
+    margin-left: 3px;
+}
+
+/* ---- 5. Dropdown Submenu ---- */
+#navbar-placeholder .sub-menu {
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #111;
+    min-width: 230px;
+    display: none;
+    border-radius: 0 0 6px 6px;
+    z-index: 1200;
+    padding: 4px 0;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    border-top: 2px solid #8b1a2c;
+}
+
+#navbar-placeholder .sub-menu li a {
+    display: block;
+    padding: 11px 18px;
+    color: #ccc;
+    text-decoration: none;
+    font-size: 13.5px;
+    transition: background 0.2s ease, color 0.2s ease, padding-left 0.2s ease;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+#navbar-placeholder .sub-menu li:last-child a {
+    border-bottom: none;
+}
+
+#navbar-placeholder .sub-menu li a:hover {
+    background: #222;
+    color: #c24d60;
+    padding-left: 24px;
+}
+
+#navbar-placeholder .nav-menu > li:hover > .sub-menu {
+    display: block;
+}
+
+/* ================================================================
+   RESPONSIVE
+   ================================================================ */
+
+@media (max-width: 1100px) {
+    #navbar-placeholder .college-mid-logo { width: 480px; }
+    #navbar-placeholder .nav-menu > li > a { font-size: 12.5px; }
+}
+
+@media (max-width: 1024px) {
+    #navbar-placeholder .college-mid-logo { width: 420px; }
+    #navbar-placeholder .responsive-logo  { width: 100px; }
+    #navbar-placeholder .nav-menu > li > a { font-size: 12px; padding: 0 6px; }
+}
+
+@media (max-width: 992px) {
+    #navbar-placeholder .navbar {
+        justify-content: flex-end;
+        position: sticky;
+        top: 0;
+        z-index: 1001;
+    }
+
+    #navbar-placeholder .fa-bars { display: flex; }
+
+    #navbar-placeholder .nav-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #000;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease-in-out;
+        z-index: 1000;
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    #navbar-placeholder .nav-menu.active {
+        max-height: calc(100vh - 48px);
+        overflow-y: auto;
+        visibility: visible;
+        opacity: 1;
+        border-bottom: 2px solid #8b1a2c;
+    }
+
+    #navbar-placeholder .nav-menu > li {
+        width: 100%;
+        max-width: 100%;
+        flex: none;
+    }
+
+    #navbar-placeholder .nav-menu > li > a {
+        padding: 14px 20px;
+        height: auto;
+        justify-content: space-between;
+        border-right: none;
+        border-left: none;
+        border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+
+    #navbar-placeholder .nav-menu > li:first-child > a { border-left: none; }
+
+    /* Mobile accordion sub-menus */
+    #navbar-placeholder .sub-menu {
+        position: static;
+        width: 100%;
+        background-color: #111;
+        max-height: 0;
+        overflow: hidden;
+        display: block !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+        transform: none !important;
+        box-shadow: none;
+        border-radius: 0;
+        border-top: none;
+        transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    #navbar-placeholder .nav-menu > li.open > .sub-menu {
+        max-height: 1000px;
+    }
+
+    #navbar-placeholder .nav-menu > li:has(.sub-menu) > a::after {
+        transition: transform 0.3s ease;
+    }
+
+    #navbar-placeholder .nav-menu > li.open:has(.sub-menu) > a::after {
+        transform: rotate(180deg);
+        color: #c24d60;
+    }
+
+    #navbar-placeholder .sub-menu li a {
+        padding-left: 36px;
+    }
+    #navbar-placeholder .sub-menu li a:hover {
+        padding-left: 42px;
+    }
+}
+
+@media (max-width: 768px) {
+    #navbar-placeholder .college-mid-logo { width: 340px; }
+    #navbar-placeholder .responsive-logo  { width: 90px; }
+    #navbar-placeholder .date-time-container { font-size: 13px; }
+}
+
+@media (max-width: 480px) {
+    #navbar-placeholder .social-links-top { gap: 6px; }
+    #navbar-placeholder .social-icon-top  { width: 25px; height: 25px; font-size: 12px; }
+    #navbar-placeholder .date-time-container { font-size: 10px; }
+    #navbar-placeholder .college-mid-logo { width: 220px; }
+    #navbar-placeholder .responsive-logo  { width: 60px; }
+}
+
+@media (max-width: 375px) {
+    #navbar-placeholder .social-links-top { font-size: 8px; }
+    #navbar-placeholder .date-time-container { font-size: 8px; }
+    #navbar-placeholder .college-mid-logo { width: 180px; }
+    #navbar-placeholder .responsive-logo  { width: 50px; }
+}
+
+@media (max-width: 320px) {
+    #navbar-placeholder .social-links-top { gap: 2px; }
+    #navbar-placeholder .college-mid-logo { width: 160px; }
+    #navbar-placeholder .responsive-logo  { width: 42px; }
+}
+</style>
+
+<div id="navbar-placeholder">
+
+    <!-- ── 1. TOP STRIP: Icons left, Datetime right (ORIGINAL) ── -->
+    <div class="social-header">
+        <div class="social-links-top">
+            <a href="https://www.linkedin.com/school/national-pg-college/" class="social-icon-top" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.facebook.com/npgcin/"                    class="social-icon-top" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.youtube.com/@npgcin14"                   class="social-icon-top" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.instagram.com/npgcin/"                   class="social-icon-top" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="date-time-container" id="datetime"></div>
+    </div>
+
+    <!-- ── 2. LOGO HEADER: 3 logos (ORIGINAL) ── -->
+    <div class="main-header">
+        <img id="logo-left"  src="assets/images/logo-left.png"  alt="NPGC Logo"                     class="responsive-logo">
+        <img id="logo-mid"   src="assets/images/clg-mid.png"    alt="National Post Graduate College" class="college-mid-logo">
+        <img id="logo-right" src="assets/images/logo-right.png" alt="NAAC / NIRF"                   class="responsive-logo">
+    </div>
+
+    <!-- ── 3. MAIN NAV BAR: Kerala University-style spread ── -->
+    <nav class="navbar">
+        <i class="fas fa-bars" id="menu-icon"></i>
+        <ul class="nav-menu">
+
+            <li><a href="../index.html">Home</a></li>
+
+            <!-- ABOUT: College identity, leadership, rankings, campus overview -->
+            <li>
+                <a href="#">About Us</a>
+                <ul class="sub-menu">
+                    <li><a href="../pages/thecollege.html">History &amp; Milestones</a></li>
+                    <li><a href="../pages/vision-mission.html">Vision &amp; Mission</a></li>
+                    <li><a href="../pages/principal-desk.html">From Principal's Desk</a></li>
+                    <li><a href="../pages/administration.html">Administration</a></li>
+                    <li><a href="../pages/naac-academic-calendar.html">NAAC</a></li>
+                    <li><a href="../pages/achievements.html">Institutional Achievements</a></li>
+                    <li><a href="../pages/accreditations-ranking.html">Accreditations &amp; Ranking</a></li>
+                    <li><a href="../pages/about-infrastructure.html">Infrastructure Overview</a></li>
+                    <li><a href="../pages/infrastructure.html">Infrastructure Facilities</a></li>
+                    <li><a href="../pages/alumni.html">Alumni Network</a></li></li>
+                </ul>
+            </li>
+
+            <!-- ADMISSIONS: Everything about getting into the college -->
+            <li>
+                <a href="#">Admissions</a>
+                <ul class="sub-menu">
+                    <li><a href="../pages/admission-procedure.html">Procedure</a></li>
+                    <li><a href="../pages/admissionSchedule.html">Schedule</a></li>
+                    <li><a href="../pages/eligibilityCriteria.html">Eligibility Criteria</a></li>
+                    <li><a href="../pages/fees.html">Fee Structure</a></li>
+                    <li><a href="../pages/seatsOffered.html">Seats Offered</a></li>
+                    <li><a href="../pages/prospectus.html">Prospectus</a></li>
+                    <li><a href="../pages/apply-online.html">Online Application</a></li>
+                </ul>
+            </li>
+
+            <!-- ACADEMICS: Programs, study resources, faculty, learning spaces -->
+            <li>
+                <a href="#">Academics</a>
+                <ul class="sub-menu">
+                    <li><a href="../pages/programs.html">Programs Offered</a></li>
+                    <li><a href="../pages/syllabus.html">Syllabus</a></li>
+                    <li><a href="../pages/academicCalendar.html">Academic Calendar</a></li>
+                    <li><a href="../pages/classSchedule.html">Time Table</a></li>
+                    <li><a href="../pages/Faculty&Dev.html">Departments & Faculty</a></li>
+                    <li><a href="../pages/laboratories.html">Laboratories</a></li>
+                    <li><a href="../pages/about-library.html">Library</a></li>
+                    <li><a href="../pages/library.html">Library Facilities</a></li>
+                    <li><a href="../pages/museum.html">Museum</a></li>
+                    <li><a href="../pages/research.html">Research &amp; Publications</a></li>
+                    <li><a href="../pages/scholarship.html">Scholarships</a></li>
+                </ul>
+            </li>
+
+            <!-- EXAMINATION: All exam-related pages -->
+            <li>
+                <a href="#">Examination</a>
+                <ul class="sub-menu">
+                    <li><a href="../pages/Exam&Ass.html">Exam &amp; Assessment</a></li>
+                    <li><a href="../pages/examinationSchedule.html">Exam Schedule</a></li>
+                    <li><a href="../pages/exam-form.html">Exam Form</a></li>
+                    <li><a href="../pages/result.html">Results</a></li>
+                </ul>
+            </li>
+
+            <!-- PLACEMENTS: Career & industry -->
+            <li>
+                <a href="#">Placements</a>
+                <ul class="sub-menu">
+                    <li><a href="../pages/placement.html">Placement Cell</a></li>
+                    <li><a href="../pages/internships.html">Internships</a></li>
+                    <li><a href="../pages/drives.html">Placement Drives</a></li>
+                    <li><a href="../pages/job-fairs.html">Job Fairs</a></li>
+                    <li><a href="../pages/industry-connections.html">Industry Connections</a></li>
+                    <li><a href="../pages/career-guidance.html">Career Guidance</a></li>
+                     <li><a href="../pages/skill-development.html">Skill Development</a></li>
+                </ul>
+            </li>
+
+            <!-- STUDENT LIFE: Campus life, activities, welfare -->
+            <li>
+                <a href="#">Student Life</a>
+                <ul class="sub-menu">
+                    <li><a href="../pages/events.html">Events &amp; Programs</a></li>
+                    <li><a href="../pages/sports.html">Sports &amp; Games</a></li>
+                    <li><a href="../pages/student-unit.html">Student Units (NCC/NSS)</a></li>
+                    <li><a href="../pages/student-achievements.html">Student Achievements</a></li>
+                    <li><a href="../pages/student-projects.html">Student Projects</a></li>
+                    <li><a href="../pages/hostel.html">Hostel Facility</a></li>
+                    <li><a href="../pages/canteen.html">Canteen</a></li>
+                    <li><a href="../pages/grievance.html">Student Grievance</a></li>
+                </ul>
+            </li>
+
+            <!-- NEWS & NOTICES: Updates, announcements, media -->
+            <li>
+                <a href="#">News &amp; Notices</a>
+                <ul class="sub-menu">
+                    <li><a href="../pages/notices.html">Notices &amp; Updates</a></li>
+                    <li><a href="../pages/e-tender.html">E-Tender</a></li>
+                    <li><a href="../pages/news.html">NPGC In News</a></li>
+                    <li><a href="../pages/socialmedia.html">Social Media</a></li>
+                </ul>
+            </li>
+
+            <li><a href="../pages/contact.html">Contact Us</a></li>
+
+        </ul>
+    </nav>
+
+    <script>
+    (function(){
+        /* --- Path-aware logo src fix --- */
+        var bp = window.basePath || '';
+        if (bp && !bp.endsWith('/')) bp += '/';
+        var map = { 'logo-left': bp+'assets/images/logo-left.png',
+                    'logo-mid':  bp+'assets/images/clg-mid.png',
+                    'logo-right':bp+'assets/images/logo-right.png' };
+        Object.keys(map).forEach(function(id){
+            var el = document.getElementById(id);
+            if(el) el.src = map[id];
+        });
+
+        /* --- Live datetime --- */
+        function tick(){
+            var el = document.getElementById('datetime');
+            if(!el) return;
+            var d = new Date();
+            var days   = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+            var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+            var h = d.getHours(), m = d.getMinutes(), s = d.getSeconds();
+            var ampm = h >= 12 ? 'PM' : 'AM';
+            h = h % 12 || 12;
+            el.textContent = days[d.getDay()] + ', ' + d.getDate() + ' ' + months[d.getMonth()] + ' ' + d.getFullYear() +
+                             '  |  ' + String(h).padStart(2,'0') + ':' + String(m).padStart(2,'0') + ':' + String(s).padStart(2,'0') + ' ' + ampm;
+        }
+        tick(); setInterval(tick, 1000);
+
+    })();
+    </script>
+
+</div>

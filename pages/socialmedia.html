@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Hub | National PG College</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Social Media Embed Scripts (Loaded early for reliability) -->
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script async src="https://www.instagram.com/embed.js"></script>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        .hero-section {
+            background: url('../assets/images/social-media-hero.png') no-repeat center center/cover !important;
+        }
+        </style>
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0"></script>
+
+    <header class="hero-section">
+        <div class="gradient-overlay-v"></div>
+        <div class="container text-center text-white position-relative z-3">
+            <span class="badge rounded-pill bg-danger px-3 py-2 mb-4 tracking-widest text-xs uppercase text-white shadow-sm">
+                Connect . Share . Engage
+            </span>
+           <h1 class="main-title fw-black text-uppercase mb-3">
+                Social<br>Media
+            </h1>
+             <p class="lead mx-auto mb-5 opacity-75 main-description px-lg-5">
+                Stay connected with the National PG College community. Follow us for the latest events, achievements, and campus life updates.
+            </p>
+            <div class="d-flex justify-content-center gap-3 mb-5">
+                <a href="#channels" class="btn btn-menu btn-lg px-5 py-3 fw-bold">
+                    <i class="fas fa-hashtag me-2"></i> Join the Conversation
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="social-platforms" id="channels">
+        <div class="container-fluid px-lg-5">
+            <div class="text-center my-5 ">
+                <span class="sec-label">Follow Us</span>
+                <h2 class="sec-h">Our Official Channels</h2>
+                <div class="sec-stripe"></div>
+            </div>
+
+            <div class="row g-4 justify-content-center mb-5">
+                <!-- Facebook -->
+                <div class="col-lg-2 col-md-4 col-6">
+    <a href="https://facebook.com/npgcin" target="_blank"
+       class="text-decoration-none">
+
+        <div class="card h-100 text-center border-0 shadow-sm p-4 social-card">
+
+            <div class="mb-3">
+                <i class="fab fa-facebook-f text-danger bg-danger-subtle p-3 rounded-circle"></i>
+            </div>
+
+            <h6 class="fw-bold mb-0 text-dark">Facebook</h6>
+
+        </div>
+
+    </a>
+</div>
+                <!-- Instagram -->
+                <div class="col-lg-2 col-md-4 col-6">
+    <a href="https://www.instagram.com/npgcin" target="_blank"
+       class="text-decoration-none">
+
+        <div class="card h-100 text-center border-0 shadow-sm p-4 social-card">
+
+            <div class="mb-3">
+                <i class="fab fa-instagram text-danger bg-danger-subtle p-3 rounded-circle"></i>
+            </div>
+
+            <h6 class="fw-bold mb-0 text-dark">Instagram</h6>
+
+        </div>
+
+    </a>
+</div>
+                <!-- X (Twitter) -->
+                <div class="col-lg-2 col-md-4 col-6">
+    <a href="https://x.com/npgcin" target="_blank"
+       class="text-decoration-none">
+
+        <div class="card h-100 text-center border-0 shadow-sm p-4 social-card">
+
+            <div class="mb-3">
+                <i class="fab fa-x-twitter text-danger bg-danger-subtle p-3 rounded-circle"></i>
+            </div>
+
+            <h6 class="fw-bold mb-0 text-dark">X (Twitter)</h6>
+
+        </div>
+
+    </a>
+</div>
+                <!-- YouTube -->
+                <div class="col-lg-2 col-md-4 col-6">
+    <a href="https://youtube.com/@npgcin14" target="_blank"
+       class="text-decoration-none">
+
+        <div class="card h-100 text-center border-0 shadow-sm p-4 social-card">
+
+            <div class="mb-3">
+                <i class="fab fa-youtube text-danger bg-danger-subtle p-3 rounded-circle"></i>
+            </div>
+
+            <h6 class="fw-bold mb-0 text-dark">YouTube</h6>
+
+        </div>
+
+    </a>
+</div>
+           
+                <!-- LinkedIn -->
+                <div class="col-lg-2 col-md-4 col-6">
+    <a href="#" target="_blank"
+       class="text-decoration-none">
+
+        <div class="card h-100 text-center border-0 shadow-sm p-4 social-card">
+
+            <div class="mb-3">
+                <i class="fab fa-linkedin-in text-danger bg-danger-subtle p-3 rounded-circle"></i>
+            </div>
+
+            <h6 class="fw-bold mb-0 text-dark">LinkedIn</h6>
+
+        </div>
+
+    </a>
+</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="live-social-feed reveal mb-5" id="feed">
+        <div class="container-fluid px-lg-5">
+            <div class="text-center my-5">
+                <span class="sec-label">Social Pulse</span>
+                <h2 class="sec-h">Live Campus Feed</h2>
+                <div class="sec-stripe"></div>
+            </div>
+
+            <div class="feed-container">
+                <div class="row g-4 d-flex justify-content-between">
+                    <!-- Facebook Column -->
+                    <div class="col-lg-4 col-md-6 ">
+                        <div class="platform-column">
+                            <div class="column-header text-center facebook-header">
+                                <i class="fab fa-facebook"></i>
+                                <h3>Facebook</h3>
+                            </div>
+                            <!-- FB Post 1 -->
+                            <div class="embed-wrapper">
+                                <div class="fb-post" data-href="https://www.facebook.com/npgcin/posts/1241009861163560" data-width="auto" data-adapt-container-width="true" data-show-text="true">
+                                    <blockquote cite="https://www.facebook.com/npgcin/posts/1241009861163560" class="fb-xfbml-parse-ignore">
+                                        <p><a href="https://www.facebook.com/npgcin/posts/1241009861163560">View latest post on Facebook</a></p>
+                                    </blockquote>
+                                </div>
+                            </div>
+                            <!-- FB Post 2 -->
+                            <div class="embed-wrapper">
+                                <div class="fb-post" data-href="https://www.facebook.com/npgcin/posts/1237645738166639" data-width="auto" data-adapt-container-width="true" data-show-text="true">
+                                    <blockquote cite="https://www.facebook.com/npgcin/posts/1237645738166639" class="fb-xfbml-parse-ignore">
+                                        <p><a href="https://www.facebook.com/npgcin/posts/1237645738166639">View post on Facebook</a></p>
+                                    </blockquote>
+                                </div>
+                            </div>
+                            <!-- FB Post 3 -->
+                            <div class="embed-wrapper">
+                                <div class="fb-post" data-href="https://www.facebook.com/npgcin/posts/1236791154918764" data-width="auto" data-adapt-container-width="true" data-show-text="true">
+                                    <blockquote cite="https://www.facebook.com/npgcin/posts/1236791154918764" class="fb-xfbml-parse-ignore">
+                                        <p><a href="https://www.facebook.com/npgcin/posts/1236791154918764">View post on Facebook</a></p>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Instagram Column -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="platform-column">
+                            <div class="column-header text-center instagram-header">
+                                <i class="fab fa-instagram"></i>
+                                <h3>Instagram</h3>
+                            </div>
+                            <!-- IG Post 1 -->
+                            <div class="embed-wrapper">
+                                <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DOz6WDxD0oP/" data-instgrm-version="14" style="width:100%; border:none;"></blockquote>
+                            </div>
+                            <!-- IG Post 2 -->
+                            <div class="embed-wrapper">
+                                <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DPqFl3kjE62/" data-instgrm-version="14" style="width:100%; border:none;"></blockquote>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- X (Twitter) Column -->
+                    <div class="col-lg-4 col-md-12">
+                        <div class="platform-column">
+                            <div class="column-header text-center twitter-header">
+                                <i class="fab fa-x-twitter"></i>
+                                <h3>Twitter (X)</h3>
+                            </div>
+                            <!-- X Post 1 -->
+                            <div class="embed-wrapper">
+                                <blockquote class="twitter-tweet" data-width="100%">
+                                    <a href="https://twitter.com/npgcin/status/1988289268926894376"></a>
+                                </blockquote>
+                            </div>
+                            <!-- X Post 2 -->
+                            <div class="embed-wrapper">
+                                <blockquote class="twitter-tweet" data-width="100%">
+                                    <a href="https://twitter.com/npgcin/status/1988234159467474956"></a>
+                                </blockquote>
+                            </div>
+                            <!-- X Post 3 -->
+                            <div class="embed-wrapper">
+                                <blockquote class="twitter-tweet" data-width="100%">
+                                    <a href="https://twitter.com/npgcin/status/1979090062458462373"></a>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/loadcomponents.js"></script>
+    
+    
+    <script src="../assets/js/main.js"></script>
+    
+    <script>
+        // Trigger FB SDK parsing manually when the feed enters the viewport
+        // This ensures the embeds render even if loaded via AJAX or hidden initially
+        document.addEventListener('DOMContentLoaded', () => {
+            const fbFeed = document.getElementById('feed');
+            if (fbFeed) {
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting && window.FB) {
+                            window.FB.XFBML.parse();
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.1 });
+                observer.observe(fbFeed);
+            }
+        });
+    </script>
+</html>
+

@@ -31,53 +31,7 @@ function initGlobalUI() {
         }
     });
 
-    /* ── 2. NEWS SCROLLER ── */
-    const newsPanel = document.getElementById("newsPanel");
-    const newsBtn = document.getElementById("newsBtn");
-    const scroller = document.querySelector("#newsPanel .news-body");
-    const track = document.querySelector("#newsPanel .news-track");
-
-    if (newsBtn && newsPanel) {
-        newsBtn.onclick = null;
-        newsBtn.addEventListener('click', () => newsPanel.classList.toggle("hidden"));
-    }
-
-    if (scroller && track) {
-        let scrollSpeed = 0.5;
-        let isDragging = false;
-        let startY, startScroll;
-
-        function autoScroll() {
-            if (!isDragging && newsPanel && !newsPanel.classList.contains('hidden')) {
-                scroller.scrollTop += scrollSpeed;
-                if (scroller.scrollTop >= track.scrollHeight / 2) {
-                    scroller.scrollTop = 0;
-                }
-            }
-            requestAnimationFrame(autoScroll);
-        }
-        autoScroll();
-
-        scroller.addEventListener("mousedown", e => {
-            isDragging = true;
-            scroller.style.cursor = "grabbing";
-            startY = e.pageY;
-            startScroll = scroller.scrollTop;
-        });
-
-        document.addEventListener("mouseup", () => {
-            isDragging = false;
-            scroller.style.cursor = "grab";
-        });
-
-        document.addEventListener("mousemove", e => {
-            if (!isDragging) return;
-            const dy = e.pageY - startY;
-            scroller.scrollTop = startScroll - dy;
-        });
-    }
-
-    /* ── 3. HERO SLIDER ── */
+    /* ── 2. HERO SLIDER ── */
     const slider = document.querySelector('.hero-slider');
     const slides = document.querySelectorAll('.hero-slide');
     const dots = document.querySelectorAll('.dot');
@@ -120,7 +74,7 @@ function initGlobalUI() {
     }
 }
 
-/* ── 4. GLOBAL SCROLL REVEAL ── */
+/* ── 3. GLOBAL SCROLL REVEAL ── */
 function initGlobalReveals() {
     const reveals = document.querySelectorAll('.reveal, .rv');
     if (reveals.length === 0) return;
@@ -136,7 +90,7 @@ function initGlobalReveals() {
     reveals.forEach(el => revealObserver.observe(el));
 }
 
-/* ── 5. GLOBAL COUNTER ANIMATION ── */
+/* ── 4. GLOBAL COUNTER ANIMATION ── */
 function initGlobalCounters() {
     const statNumbers = document.querySelectorAll('.stat-number, .stat-num, .counter');
     if (statNumbers.length === 0) return;
@@ -167,7 +121,7 @@ function initGlobalCounters() {
     statNumbers.forEach(s => countObserver.observe(s));
 }
 
-/* ── 6. GLOBAL IMAGE LIGHTBOX ── */
+/* ── 5. GLOBAL IMAGE LIGHTBOX ── */
 function initGlobalLightbox() {
     const items = document.querySelectorAll('.gallery-item');
     if (items.length === 0) return;

@@ -86,4 +86,7 @@ erDiagram
 ```
 
 
-"# npgc-final-updated" 
+## Documentation
+- [Testing Strategies Guide](file:///c:/Users/krishna%20Agarwal/Desktop/NPGC%20College%20Website/docs/TESTING.md) - Details on functional, UI/UX, and performance testing protocols.
+
+"# npgc-final-updated"

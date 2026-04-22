@@ -293,35 +293,19 @@
     </div>
   </section>
 
-  <!-- News Panel -->
-  <!-- <button id="newsBtn" title="Latest News">📰</button> -->
-  <div id="newsPanel">
-    <div class="news-header">Latest News</div>
-    <div class="news-body">
-      <div class="news-track">
-        <ul>
-          <li>Workshop on Data Science – Register Now</li>
-          <li>Annual Cultural Fest Dates Announced</li>
-          <li>Admissions Open for Session 2026–27</li>
-          <li>NAAC Peer Team Visit Scheduled</li>
-          <li>Semester Exams Begin from March 10</li>
-          <li>National Seminar on AI – Feb 15</li>
-          <li>Placement Drive for Final Year Students</li>
-          <li>Library Timings Extended During Exams</li>
-          <li>Scholarship Forms Deadline Extended</li>
-        </ul>
-        <ul>
-          <li>Workshop on Data Science – Register Now</li>
-          <li>Annual Cultural Fest Dates Announced</li>
-          <li>Admissions Open for Session 2026–27</li>
-          <li>NAAC Peer Team Visit Scheduled</li>
-          <li>Semester Exams Begin from March 10</li>
-          <li>National Seminar on AI – Feb 15</li>
-          <li>Placement Drive for Final Year Students</li>
-          <li>Library Timings Extended During Exams</li>
-          <li>Scholarship Forms Deadline Extended</li>
-        </ul>
-      </div>
+
+  <!-- ══ FLOATING WIDGETS ══ -->
+  <div class="floating-controls">
+    <button id="chatbotBtn" class="floating-btn pulse" title="NPGC Assistant">
+      <i class="fas fa-comment-dots"></i>
+    </button>
+  </div>
+
+  <!-- Chatbot Window -->
+  <div id="chatbotWindow" class="chatbot-window">
+
+    <div class="chatbot-body">
+      <iframe src="https://npgc-rule-based-bot.onrender.com/" title="NPGC Chatbot" allow="microphone"></iframe>
     </div>
   </div>
 
@@ -344,29 +328,8 @@
       dots.forEach(function(d){ d.addEventListener('click', function(){ goTo(+this.dataset.slide); }); });
       setInterval(function(){ goTo(idx+1); }, 5000);
     })();
-
-    /* News Panel Toggle */
-    document.getElementById('newsBtn').addEventListener('click', function(){
-      document.getElementById('newsPanel').classList.toggle('open');
-    });
-
-   
- document.addEventListener('DOMContentLoaded', function(){
-      var obs = new IntersectionObserver(function(entries){
-        entries.forEach(function(e){
-          if(!e.isIntersecting) return;
-          var el = e.target, target = +el.dataset.target, cur = 0, step = Math.ceil(target/60);
-          var iv = setInterval(function(){
-            cur += step;
-            if(cur >= target){ el.textContent = target.toLocaleString(); clearInterval(iv); }
-            else { el.textContent = cur.toLocaleString(); }
-          }, 20);
-          obs.unobserve(el);
-        });
-      }, {threshold: 0.5});
-      document.querySelectorAll('.stat-number').forEach(function(el){ obs.observe(el); });
-    });
   </script>
+
 
 </body>
 </html>

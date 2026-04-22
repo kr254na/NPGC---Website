@@ -215,11 +215,44 @@ function initGlobalLightbox() {
     });
 }
 
+/* ── 6. FLOATING WIDGETS (News & Chatbot) ── */
+function initFloatingWidgets() {
+    const chatbotBtn = document.getElementById('chatbotBtn');
+    const chatbotWindow = document.getElementById('chatbotWindow');
+    const closeChat = document.getElementById('closeChat');
+
+    if (chatbotBtn && chatbotWindow) {
+        chatbotBtn.addEventListener('click', () => {
+            if (window.innerWidth < 768) {
+                // Mobile: Open in a new tab ("new screen")
+                window.open('https://npgc-rule-based-bot.onrender.com/', '_blank');
+            } else {
+                // Desktop: Toggle the floating window
+                const isOpen = chatbotWindow.classList.toggle('open');
+            }
+        });
+    }
+
+    if (closeChat && chatbotWindow) {
+        closeChat.addEventListener('click', () => {
+            chatbotWindow.classList.remove('open');
+        });
+    }
+
+    /* Close on escape */
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            if (chatbotWindow) chatbotWindow.classList.remove('open');
+        }
+    });
+}
+
 /* ── COORDINATED INITIALIZATION ── */
 function bootstrap() {
     initGlobalReveals();
     initGlobalCounters();
     initGlobalLightbox();
+    initFloatingWidgets();
     
     if (window.componentsLoaded) {
         initGlobalUI();

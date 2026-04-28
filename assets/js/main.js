@@ -247,8 +247,22 @@ function initFloatingWidgets() {
     });
 }
 
+/* ── 7. GLOBAL FAVICON ── */
+function initFavicon() {
+    if (!document.querySelector("link[rel~='icon']")) {
+        var bp = window.basePath || '';
+        if (bp && !bp.endsWith('/')) bp += '/';
+        const link = document.createElement('link');
+        link.rel = 'icon';
+        link.href = bp + 'assets/images/logo-left.png';
+        link.type = 'image/png';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    }
+}
+
 /* ── COORDINATED INITIALIZATION ── */
 function bootstrap() {
+    initFavicon();
     initGlobalReveals();
     initGlobalCounters();
     initGlobalLightbox();

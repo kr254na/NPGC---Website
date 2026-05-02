@@ -102,7 +102,7 @@ function initGlobalCounters() {
                 const match = el.innerText.match(/(\d+)/);
                 if (!match) return;
                 const target = parseInt(match[1]);
-                const suffix = el.innerHTML.replace(match[1], '');
+                const suffix = el.innerText.replace(match[1], '');
                 const duration = 1500;
                 const startTime = performance.now();
 
@@ -110,7 +110,7 @@ function initGlobalCounters() {
                     const elapsed = currentTime - startTime;
                     const progress = Math.min(elapsed / duration, 1);
                     const current = Math.floor(progress * target);
-                    el.innerHTML = current + suffix;
+                    el.innerText = current + suffix;
                     if (progress < 1) requestAnimationFrame(updateCount);
                 }
                 requestAnimationFrame(updateCount);

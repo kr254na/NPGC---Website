@@ -179,6 +179,7 @@ background-image:
       justify-content: space-evenly;
       opacity: 1;
       transform: translateY(15px);
+      min-width: 0;
       img{
         border-radius: 12px;
         width: 200px;
@@ -201,6 +202,7 @@ background-image:
       justify-content: start;
       align-items: start;
       line-height: 0.6;
+      min-width: 0;
       h4{
         font-size: 20px;
         text-align: center;
@@ -235,6 +237,7 @@ background-image:
         text-align: justify;
         border-top: 2px solid #fff;
         border-bottom: 2px solid #fff;
+        overflow-wrap: break-word;
       }
         a{
       padding: 10px 15px;
@@ -509,12 +512,12 @@ background-image:
       font-size:30px;
     }
     .faculty-grid{
-      grid-template-columns: auto;
+      grid-template-columns: 1fr;
     }
 }
 
 @media (max-width:320px){
   .faculty-grid{
-    margin-left:-23px;
+    margin-left: 0;
   }
 }

@@ -151,13 +151,11 @@ class PortalTable {
             const matchesFilter = this.state.activeFilter === 'all' || 
                                 (val === this.state.activeFilter) ||
                                 (val && val.toString().toLowerCase().includes(this.state.activeFilter.toLowerCase()));
-            
             // Search Filter
             const matchesSearch = !this.state.searchQ || this.filterFields.some(field => {
                 const val = item[field];
                 return val && val.toString().toLowerCase().includes(this.state.searchQ);
             });
-
             return matchesFilter && matchesSearch;
         });
 

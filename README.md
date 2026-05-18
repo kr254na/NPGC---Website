@@ -1053,4 +1053,3 @@ The **NPGC Official Website** project demonstrates the implementation of modern 
 
 This project serves as a scalable foundation for building a complete digital ecosystem for educational institutions.
 
---- is it ok now

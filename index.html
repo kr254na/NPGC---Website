@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -40,6 +39,41 @@
     </div>
   </section>
 
+  <!-- ══ ONGOING ADMISSIONS BANNER ══ -->
+  <section id="admissions-ongoing-banner" class="container-fluid px-lg-5 my-4 d-none">
+    <div class="card border-0 text-white shadow-lg overflow-hidden position-relative" style="background: linear-gradient(135deg, #9b051e, #b6576c); border-left: 6px solid rgba(255, 255, 255, 0.4) !important; border-radius: 16px;">
+      <div class="card-body p-4 p-md-5 position-relative">
+        <div class="row align-items-center">
+          <div class="col-12">
+            <div class="d-flex flex-wrap align-items-center gap-2 mb-3">
+              <span class="badge bg-white text-danger px-3 py-2 fw-bold text-uppercase tracking-wider shadow-sm d-inline-flex align-items-center gap-2" style="font-size: 0.72rem; color: #8b1a2c !important;">
+                <span class="spinner-grow spinner-grow-sm text-danger" role="status" aria-hidden="true" style="animation-duration: 0.8s; width: 0.65rem; height: 0.65rem;"></span>
+                Admissions Ongoing
+              </span>
+              <span class="badge bg-white bg-opacity-10 text-white border border-white-50 px-3 py-2 fw-bold text-uppercase tracking-wider" style="font-size: 0.72rem;">
+                Session 2026-27
+              </span>
+            </div>
+            <h2 class="fw-bold text-white mb-2" style="font-family: 'Inter', sans-serif; font-size: calc(1.15rem + 0.4vw); letter-spacing: -0.5px;">
+              Shape Your Future at National P.G. College
+            </h2>
+            <p class="text-white-10 mb-3 fs-10 lh-lg" style="max-width: 850px;">
+              Online applications for all Undergraduate (UG) and Postgraduate (PG) courses are currently active. Join one of Lucknow's premier NAAC 'A' accredited institutions.
+            </p>
+            <div class="d-flex flex-wrap gap-2 mt-3">
+              <a href="pages/admission-procedure.html" class="btn btn-outline-light border btn-sm px-3 py-2 fw-semibold rounded-pill shadow-sm" style="font-size: 0.8rem;">
+                Admission Procedure
+              </a>
+              <a href="pages/apply-online.html" class="btn btn-light btn-sm px-3 py-2 fw-bold rounded-pill shadow-sm" style="color: #8b1a2c !important; font-size: 0.8rem;">
+                Apply Now <i class="fas fa-arrow-right ms-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ══ NOTICES & EVENTS ══ -->
   <section class="notices-section-home" id="notices">
     <div class="container-fluid px-lg-5">
@@ -70,33 +104,34 @@
               <div class="split-card-content"><h4>Day-6 ATAL-FDP Programme</h4><p>Final day of the Faculty Development Programme.</p></div>
             </a>
           </div>
+          <a href="pages/events.html" class="view-all-link">View All Upcoming Events →</a>
         </div>
 
         <div>
           <div class="notice-col-header"><i class="fas fa-bullhorn"></i><h3>Latest Notices</h3></div>
           <div class="split-list">
             <a href="pages/notices/medha-samman-2026.html" class="split-card">
-              <div class="notice-icon-circle"><i class="fas fa-trophy"></i></div>
+              <div class="event-date-box"><span class="event-day">09</span><span class="event-month">Apr</span></div>
               <div class="split-card-content"><h4>Medha Samman – 2026</h4></div>
             </a>
             <a href="pages/notices/practical_B&M.Voc.html" class="split-card">
-              <div class="notice-icon-circle"><i class="fas fa-university"></i></div>
+              <div class="event-date-box"><span class="event-day">07</span><span class="event-month">Apr</span></div>
               <div class="split-card-content"><h4>Practical Exam JUNE-2026: B.Voc. &amp; M.Voc. (Software)</h4></div>
             </a>
             <a href="pages/notices/practical_BAJMC.html" class="split-card">
-              <div class="notice-icon-circle"><i class="fas fa-laptop-code"></i></div>
+              <div class="event-date-box"><span class="event-day">07</span><span class="event-month">Apr</span></div>
               <div class="split-card-content"><h4>Practical Exam JUNE-2026: B.A.J.M.C.</h4></div>
             </a>
             <a href="pages/notices/practical-exam-software-2026.html" class="split-card">
-              <div class="notice-icon-circle"><i class="fas fa-file-lines"></i></div>
+              <div class="event-date-box"><span class="event-day">06</span><span class="event-month">Apr</span></div>
               <div class="split-card-content"><h4>Practical Exam JUNE-2026: B.Voc.-Sem IV</h4></div>
             </a>
             <a href="pages/notices/datesheet-june-2026.html" class="split-card">
-              <div class="notice-icon-circle"><i class="fas fa-file-lines"></i></div>
+              <div class="event-date-box"><span class="event-day">06</span><span class="event-month">Apr</span></div>
               <div class="split-card-content"><h4>Semester-End Examination JUNE-2026: Datesheet</h4></div>
             </a>
             <a href="pages/notices/examinationFormNotice.html" class="split-card">
-              <div class="notice-icon-circle"><i class="fas fa-file-lines"></i></div>
+              <div class="event-date-box"><span class="event-day">01</span><span class="event-month">Apr</span></div>
               <div class="split-card-content"><h4>Examination Form Notice</h4></div>
             </a>
           </div>
@@ -385,6 +420,81 @@
     </div>
   </div>
 
+  <!-- ══ ANNOUNCEMENT POPUP MODAL ══ -->
+  <div class="modal fade" id="announcementModal" tabindex="-1" aria-labelledby="announcementModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered px-3">
+      <div class="modal-content border-0 shadow-lg" style="border-radius: 16px; overflow: hidden;">
+        <!-- Header with gradient and text -->
+        <div class="modal-header text-white border-0 py-3 px-3 px-sm-4" style="background: linear-gradient(135deg, #8b1a2c, #a71836);">
+          <h5 class="modal-title fw-bold d-flex align-items-center gap-2" id="announcementModalLabel" style="font-size: calc(0.9rem + 0.1vw);">
+            <i class="fas fa-bullhorn text-warning fs-5"></i>
+            Important Updates
+          </h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <!-- Body with announcement content -->
+        <div class="modal-body p-3 p-sm-4 bg-white">
+          <div class="text-center mb-3">
+            <img src="assets/images/logo-left.png" alt="National PG College Logo" style="height: 52px; max-height: 10vw; object-fit: contain;">
+            <h4 class="fw-bold text-dark mt-2" style="font-family: 'Inter', sans-serif; font-size: clamp(0.95rem, 3vw, 1.00rem); letter-spacing: -0.3px;">Online Admission Session 2026-27</h4>
+          </div>
+          
+          <!-- Exam Alert -->
+          <div class="alert alert-success border-0 shadow-sm d-flex align-items-center gap-2 gap-sm-3 p-2.5 p-sm-3 mb-3 mb-sm-4 rounded-3" style="background-color: rgba(25, 135, 84, 0.08);">
+            <div class="bg-success text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 32px; height: 32px; flex-shrink:0;">
+              <i class="fas fa-download" style="font-size: 0.85rem;"></i>
+            </div>
+            <div>
+              <h6 class="fw-bold mb-1 text-success" style="font-size: 0.82rem; line-height: 1.2;">End-Sem Exam Admit Card (June-2026)</h6>
+              <a href="https://Exam.npgc.in" target="_blank" class="text-success fw-bold text-decoration-none d-inline-block" style="font-size: 0.72rem;">
+                Admit cards are now live. Click to download <i class="fas fa-external-link-alt ms-1" style="font-size: 0.65rem;"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- 2x2 Grid of Actions -->
+          <div class="row g-2 g-sm-3 mb-3 mb-sm-4">
+            <div class="col-6">
+              <a href="pages/admissionSchedule.html" class="card h-100 border border-light-subtle shadow-sm text-decoration-none p-2 p-sm-3 text-center bg-light" style="border-radius: 12px; transition: all 0.2s;">
+                <i class="fas fa-calendar-alt text-danger mb-1 mb-sm-2 fs-5 fs-sm-4"></i>
+                <h6 class="fw-bold text-dark mb-0 mb-sm-1" style="font-size: 0.78rem; line-height: 1.2;">Admission Glance</h6>
+                <span class="text-muted d-none d-sm-inline" style="font-size: 0.68rem;">Schedules & Timeline</span>
+              </a>
+            </div>
+            <div class="col-6">
+              <a href="pages/seatsOffered.html" class="card h-100 border border-light-subtle shadow-sm text-decoration-none p-2 p-sm-3 text-center bg-light" style="border-radius: 12px; transition: all 0.2s;">
+                <i class="fas fa-university text-danger mb-1 mb-sm-2 fs-5 fs-sm-4"></i>
+                <h6 class="fw-bold text-dark mb-0 mb-sm-1" style="font-size: 0.78rem; line-height: 1.2;">Seats Offered</h6>
+                <span class="text-muted d-none d-sm-inline" style="font-size: 0.68rem;">Program Intake Matrix</span>
+              </a>
+            </div>
+            <div class="col-6">
+              <a href="pages/prospectus.html" class="card h-100 border border-light-subtle shadow-sm text-decoration-none p-2 p-sm-3 text-center bg-light" style="border-radius: 12px; transition: all 0.2s;">
+                <i class="fas fa-file-pdf text-danger mb-1 mb-sm-2 fs-5 fs-sm-4"></i>
+                <h6 class="fw-bold text-dark mb-0 mb-sm-1" style="font-size: 0.78rem; line-height: 1.2;">LUACCET Brochure</h6>
+                <span class="text-muted d-none d-sm-inline" style="font-size: 0.68rem;">Download Prospectus</span>
+              </a>
+            </div>
+            <div class="col-6">
+              <a href="pages/prospectus.html" class="card h-100 border border-light-subtle shadow-sm text-decoration-none p-2 p-sm-3 text-center bg-light" style="border-radius: 12px; transition: all 0.2s;">
+                <i class="fas fa-graduation-cap text-danger mb-1 mb-sm-2 fs-5 fs-sm-4"></i>
+                <h6 class="fw-bold text-dark mb-0 mb-sm-1" style="font-size: 0.78rem; line-height: 1.2;">LUACMAT Brochure</h6>
+                <span class="text-muted d-none d-sm-inline" style="font-size: 0.68rem;">Professional Courses</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Bottom Apply Now button -->
+          <div class="text-center pt-1 pt-sm-2">
+            <a href="pages/apply-online.html" class="btn btn-danger px-4 px-sm-5 py-2 fw-bold shadow-sm w-100" style="background: linear-gradient(135deg, #8b1a2c, #a71836); border: none; font-size: 0.85rem; max-width: 250px; border-radius: 50px;">
+              Apply Now <i class="fas fa-arrow-right ms-2" style="font-size: 0.8rem;"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div id="footer-placeholder"></div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -403,6 +513,80 @@
       }
       dots.forEach(function(d){ d.addEventListener('click', function(){ goTo(+this.dataset.slide); }); });
       setInterval(function(){ goTo(idx+1); }, 5000);
+    })();
+
+    /* Toggle Admissions Ongoing Banner */
+    (function(){
+      // Set to true when admissions are open, or false to hide the banner
+      var admissionsOpened = true; 
+      var banner = document.getElementById('admissions-ongoing-banner');
+      if (banner && admissionsOpened) {
+        banner.classList.remove('d-none');
+      }
+    })();
+
+    /* Announcement Popup Modal (Shown every time the homepage is opened) */
+    (function(){
+      function initModal() {
+        var modalEl = document.getElementById('announcementModal');
+        if (modalEl) {
+          // Show the modal
+          modalEl.classList.add('show');
+          modalEl.style.display = 'block';
+          modalEl.removeAttribute('aria-hidden');
+          modalEl.setAttribute('aria-modal', 'true');
+          modalEl.setAttribute('role', 'dialog');
+          
+          // Lock body scroll
+          document.body.classList.add('modal-open');
+          document.body.style.overflow = 'hidden';
+          
+          // Create and append backdrop
+          var backdrop = document.createElement('div');
+          backdrop.className = 'modal-backdrop fade show';
+          backdrop.id = 'announcement-modal-backdrop';
+          document.body.appendChild(backdrop);
+          
+          // Close function
+          function closeModal() {
+            modalEl.classList.remove('show');
+            modalEl.style.display = 'none';
+            modalEl.setAttribute('aria-hidden', 'true');
+            modalEl.removeAttribute('aria-modal');
+            modalEl.removeAttribute('role');
+            
+            document.body.classList.remove('modal-open');
+            document.body.style.overflow = '';
+            
+            var activeBackdrop = document.getElementById('announcement-modal-backdrop');
+            if (activeBackdrop) {
+              activeBackdrop.parentNode.removeChild(activeBackdrop);
+            }
+          }
+          
+          // Wire close buttons
+          var closeButtons = modalEl.querySelectorAll('[data-bs-dismiss="modal"]');
+          closeButtons.forEach(function(btn) {
+            btn.addEventListener('click', closeModal);
+          });
+          
+          // Close on clicking backdrop
+          modalEl.addEventListener('click', function(e) {
+            if (e.target === modalEl) {
+              closeModal();
+            }
+          });
+        }
+      }
+      
+      // Delay showing the modal by 1.2s for a premium presentation
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', function() {
+          setTimeout(initModal, 1200);
+        });
+      } else {
+        setTimeout(initModal, 1200);
+      }
     })();
   </script>
 

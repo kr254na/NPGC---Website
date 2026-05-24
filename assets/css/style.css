@@ -70,11 +70,15 @@ html {
   scroll-padding-top: 100px;
 }
 
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: var(--text-dark);
   line-height: 1.6;
-  width: 100%;
   margin: 0;
   padding: 0;
 }
@@ -2280,6 +2284,7 @@ body {
   color: #fff; padding: 6px 14px; border-radius: 20px;
   font-size: 0.8rem; font-weight: 600; margin-top: 12px; margin-bottom: 16px;
 }
+
 .checklist-section { background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); padding: 80px 0; }
 .doc-item {
   display: flex; align-items: center; gap: 16px;
@@ -2510,6 +2515,10 @@ body {
 
 @media (max-width: 640px) {
   .focus-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 480px) {
+  .focus-grid { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 576px) {

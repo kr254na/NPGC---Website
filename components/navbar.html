@@ -20,6 +20,8 @@
     background: linear-gradient(to right, #000000, #1a1a1a);
     color: #fff;
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    flex-wrap: wrap;
+    gap: 8px;
 }
 
 #navbar-placeholder .social-links-top {
@@ -64,14 +66,19 @@
     background-color: #fff;
     width: 100%;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    overflow: hidden;
 }
 
 #navbar-placeholder .responsive-logo {
     width: 130px;
+    max-width: 18%;
+    height: auto;
 }
 
 #navbar-placeholder .college-mid-logo {
     width: 600px;
+    max-width: 60%;
+    height: auto;
 }
 
 /* Base resets restricted to navbar-placeholder */
@@ -202,6 +209,64 @@
     display: block;
 }
 
+/* ---- 5.1 Nested Dropdown Sub-submenu ---- */
+#navbar-placeholder .sub-menu > li {
+    position: relative;
+}
+
+#navbar-placeholder .sub-submenu {
+    list-style: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background: #111;
+    min-width: 230px;
+    display: none;
+    border-radius: 0 6px 6px 6px;
+    z-index: 1300;
+    padding: 4px 0;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    border-top: 2px solid #8b1a2c;
+}
+
+#navbar-placeholder .sub-submenu li a {
+    display: block;
+    padding: 11px 18px;
+    color: #ccc;
+    text-decoration: none;
+    font-size: 13.5px;
+    transition: background 0.2s ease, color 0.2s ease, padding-left 0.2s ease;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+#navbar-placeholder .sub-submenu li:last-child a {
+    border-bottom: none;
+}
+
+#navbar-placeholder .sub-submenu li a:hover {
+    background: #222;
+    color: #c24d60;
+    padding-left: 24px;
+}
+
+@media (min-width: 993px) {
+    #navbar-placeholder .sub-menu > li.has-submenu:hover > .sub-submenu {
+        display: block;
+    }
+}
+
+/* Caret for nested submenus */
+#navbar-placeholder .sub-menu > li.has-submenu > a::after {
+    content: '\f105'; /* right angle icon */
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 11px;
+    opacity: 0.6;
+    float: right;
+    margin-top: 3px;
+    transition: transform 0.3s ease;
+}
+
 /* ================================================================
    RESPONSIVE
    ================================================================ */
@@ -305,6 +370,36 @@
     #navbar-placeholder .sub-menu li a:hover {
         padding-left: 42px;
     }
+
+    /* Mobile accordion sub-submenus */
+    #navbar-placeholder .sub-submenu {
+        position: static;
+        width: 100%;
+        background-color: #1a1a1a;
+        max-height: 0;
+        overflow: hidden;
+        display: block !important;
+        box-shadow: none;
+        border-radius: 0;
+        border-top: none;
+        transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    #navbar-placeholder .sub-menu > li.has-submenu.open > .sub-submenu {
+        max-height: 500px;
+    }
+
+    #navbar-placeholder .sub-submenu li a {
+        padding-left: 54px;
+    }
+    #navbar-placeholder .sub-submenu li a:hover {
+        padding-left: 60px;
+    }
+
+    #navbar-placeholder .sub-menu > li.has-submenu.open > a::after {
+        transform: rotate(90deg);
+        color: #c24d60;
+    }
 }
 
 @media (max-width: 768px) {
@@ -372,6 +467,7 @@
                     <li><a href="../pages/former-principals.html">Former Principals</a></li>
                     <li><a href="../pages/administration.html">Administration</a></li>
                     <li><a href="../pages/naac-academic-calendar.html">NAAC</a></li>
+                    <li><a href="../pages/achievements.html">Institutional Achievements</a></li>
                     <li><a href="../pages/accreditations-ranking.html">Accreditations &amp; Ranking</a></li>
                     <li><a href="../pages/about-infrastructure.html">Infrastructure</a></li>
                     <li><a href="../pages/alumni.html">Alumni Network</a></li></li>
@@ -444,8 +540,13 @@
                     <li><a href="../pages/student-unit.html">Student Units (NCC/NSS)</a></li>
                     <li><a href="../pages/student-achievements.html">Student Achievements</a></li>
                     <li><a href="../pages/student-projects.html">Student Projects</a></li>
-                    <li><a href="../pages/hostel.html">Hostel Facility</a></li>
-                    <li><a href="../pages/canteen.html">Canteen</a></li>
+                    <li class="has-submenu">
+                        <a href="#">Facilities</a>
+                        <ul class="sub-submenu">
+                            <li><a href="../pages/canteen.html">Canteen</a></li>
+                            <li><a href="../pages/hostel.html">Hostel Facility</a></li>
+                        </ul>
+                    </li>
                     <li><a href="../pages/grievance.html">Student Grievance</a></li>
                 </ul>
             </li>

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Registration – NPGC Lucknow</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        .form-control:focus, .form-select:focus {
+            border-color: #8b1a2c !important;
+            box-shadow: 0 0 0 0.25rem rgba(139, 26, 44, 0.15) !important;
+        }
+        .form-check-input:checked {
+            background-color: #8b1a2c !important;
+            border-color: #8b1a2c !important;
+        }
+        .form-check-input:focus {
+            border-color: #8b1a2c !important;
+            box-shadow: 0 0 0 0.25rem rgba(139, 26, 44, 0.15) !important;
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+    <div id="navbar-placeholder"></div>
+
+    <!-- Hero Banner -->
+    <header class="hero-section mb-5" style="background: url('../assets/images/Alumni/WhatsApp Image 2026-03-27 at 2.22.05 PM.jpeg') no-repeat center center/cover !important;">
+        <div class="gradient-overlay-v"></div>
+        <div class="container text-center text-white position-relative z-3">
+            <span class="badge rounded-pill bg-danger px-3 py-2 mb-4 tracking-widest text-xs uppercase text-white shadow-sm">
+                Join the Network
+            </span>
+            <h1 class="main-title fw-black text-uppercase mb-3">
+                Alumni<br>Registration
+            </h1>
+            <p class="lead mx-auto mb-5 opacity-75 main-description">
+                Stay connected with your alma mater. Register below to join the official NPGC Alumni Directory.
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Registration Form Container -->
+    <main class="container mt-5 pb-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <!-- Registration Card -->
+                <div class="card border-0 shadow-lg rounded-4 overflow-hidden" style="position: relative; z-index: 10;">
+                    
+                    <!-- Card Header -->
+                    <div class="card-header bg-danger text-white p-4 border-0 d-flex justify-content-between align-items-center">
+                        <div>
+                            <h3 class="fw-bold mb-1" style="font-size: 1.25rem;">Register Profile</h3>
+                            <p class="mb-0 opacity-75 small">Fill in the registration form below. Fields marked * are mandatory.</p>
+                        </div>
+                        <i class="fa-solid fa-user-graduate fa-2x opacity-50 d-none d-sm-block"></i>
+                    </div>
+
+                    <!-- Form Body -->
+                    <form id="alumniRegForm" class="card-body p-4 p-sm-5 needs-validation" novalidate>
+                        
+                        <!-- SECTION 1: Personal Details -->
+                        <div class="mb-4">
+                            <h5 class="text-danger fw-bold border-start border-3 border-danger ps-2 mb-3">
+                                Personal Information
+                            </h5>
+                            
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="fullName" placeholder="Rahul Verma" required>
+                                        <label for="fullName">Full Name <span class="text-danger">*</span></label>
+                                        <div class="invalid-feedback">Please enter your full name.</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="email" placeholder="rahul@example.com" required>
+                                        <label for="email">Email Address <span class="text-danger">*</span></label>
+                                        <div class="invalid-feedback">Please enter a valid email address.</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="tel" class="form-control" id="phone" placeholder="9876543210" pattern="[0-9]{10,12}" required>
+                                        <label for="phone">Phone / Mobile No. <span class="text-danger">*</span></label>
+                                        <div class="invalid-feedback">Please enter a valid mobile number (10-12 digits).</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="date" class="form-control" id="dob" placeholder="dob">
+                                        <label for="dob">Date of Birth</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label fw-semibold text-secondary small d-block mb-2">Gender</label>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="gender" id="genderMale" value="Male" checked>
+                                        <label class="form-check-label" for="genderMale">Male</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="gender" id="genderFemale" value="Female">
+                                        <label class="form-check-label" for="genderFemale">Female</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="gender" id="genderOther" value="Other">
+                                        <label class="form-check-label" for="genderOther">Other</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- SECTION 2: Academic Details -->
+                        <div class="mb-4">
+                            <h5 class="text-danger fw-bold border-start border-3 border-danger ps-2 mb-3">
+                                Academic Profile
+                            </h5>
+                            
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select class="form-select" id="course" required>
+                                            <option value="" disabled selected>Choose Course</option>
+                                            <option value="B.B.A.">B.B.A. (Bachelor of Business Administration)</option>
+                                            <option value="B.C.A.">B.C.A. (Bachelor of Computer Applications)</option>
+                                            <option value="B.Com.">B.Com. (Bachelor of Commerce)</option>
+                                            <option value="B.A.">B.A. (Bachelor of Arts)</option>
+                                            <option value="B.Sc.">B.Sc. (Bachelor of Science)</option>
+                                            <option value="M.A. Psychology">M.A. Psychology</option>
+                                            <option value="M.Com.">M.Com. (Master of Commerce)</option>
+                                            <option value="B.Voc.">B.Voc. (Bachelor of Vocation)</option>
+                                        </select>
+                                        <label for="course">Course Completed <span class="text-danger">*</span></label>
+                                        <div class="invalid-feedback">Please select your graduated course.</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select class="form-select" id="batch" required>
+                                            <option value="" disabled selected>Choose Year</option>
+                                            <script>
+                                                const currentYear = new Date().getFullYear();
+                                                for (let year = currentYear; year >= 2005; year--) {
+                                                    document.write(`<option value="${year}">${year}</option>`);
+                                                }
+                                            </script>
+                                        </select>
+                                        <label for="batch">Passing Batch Year <span class="text-danger">*</span></label>
+                                        <div class="invalid-feedback">Please select your passing batch year.</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="rollNo" placeholder="Roll No">
+                                        <label for="rollNo">College Roll Number (Optional)</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- SECTION 3: Professional Info -->
+                        <div class="mb-4">
+                            <h5 class="text-danger fw-bold border-start border-3 border-danger ps-2 mb-3">
+                                Professional Information
+                            </h5>
+
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="designation" placeholder="Designation">
+                                        <label for="designation">Current Designation</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="organization" placeholder="Organization">
+                                        <label for="organization">Current Company / Organization</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="url" class="form-control" id="linkedin" placeholder="LinkedIn Profile">
+                                        <label for="linkedin">LinkedIn Profile URL</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select class="form-select" id="experience">
+                                            <option value="" disabled selected>Select Experience Range</option>
+                                            <option value="0-1">0 - 1 Years (Fresher)</option>
+                                            <option value="1-3">1 - 3 Years</option>
+                                            <option value="3-5">3 - 5 Years</option>
+                                            <option value="5-10">5 - 10 Years</option>
+                                            <option value="10+">10+ Years</option>
+                                        </select>
+                                        <label for="experience">Years of Experience</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- SECTION 4: Uploads & Textarea -->
+                        <div class="mb-4">
+                            <h5 class="text-danger fw-bold border-start border-3 border-danger ps-2 mb-3">
+                                Uploads &amp; Attachments
+                            </h5>
+
+                            <div class="row g-3 mb-3">
+                                <div class="col-md-6">
+                                    <div>
+                                        <label for="profilePhoto" class="form-label fw-semibold text-secondary small">Profile Photo <span class="text-danger">*</span></label>
+                                        <input class="form-control" type="file" id="profilePhoto" accept="image/*" required>
+                                        <div class="invalid-feedback">Please upload a profile photo.</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div>
+                                        <label for="resumeFile" class="form-label fw-semibold text-secondary small">Resume / CV (PDF only)</label>
+                                        <input class="form-control" type="file" id="resumeFile" accept=".pdf">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" id="bio" placeholder="Bio Summary" style="height: 110px" maxlength="500"></textarea>
+                                        <label for="bio">Short Bio / Career Summary</label>
+                                        <div class="text-end text-muted small mt-1" id="charCounter">500 characters remaining</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- SECTION 5: Preferences (Checkboxes and Switches) -->
+                        <div class="mb-4">
+                            <h5 class="text-danger fw-bold border-start border-3 border-danger ps-2 mb-3">
+                                Preferences &amp; Engagement
+                            </h5>
+
+                            <div class="mb-3">
+                                <label class="form-label fw-semibold text-secondary small d-block mb-2">How would you like to contribute to the college?</label>
+                                <div class="form-check mb-1">
+                                    <input class="form-check-input" type="checkbox" name="interests" id="interestMentoring" value="Mentoring Students">
+                                    <label class="form-check-label" for="interestMentoring">Student Mentorship</label>
+                                </div>
+                                <div class="form-check mb-1">
+                                    <input class="form-check-input" type="checkbox" name="interests" id="interestLectures" value="Guest Lectures">
+                                    <label class="form-check-label" for="interestLectures">Guest Lectures / Webinars</label>
+                                </div>
+                                <div class="form-check mb-1">
+                                    <input class="form-check-input" type="checkbox" name="interests" id="interestPlacements" value="Placement Assistance">
+                                    <label class="form-check-label" for="interestPlacements">Placement Assistance / Referral</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="interests" id="interestEvents" value="Event Coordination">
+                                    <label class="form-check-label" for="interestEvents">Event Organizing</label>
+                                </div>
+                            </div>
+
+                            <div class="row g-2 pt-2">
+                                <div class="col-md-6">
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" id="newsletterToggle" name="newsletter" checked>
+                                        <label class="form-check-label" for="newsletterToggle">Subscribe to Alumni Newsletters &amp; Updates</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" id="profileVisibilityToggle" name="profileVisibility">
+                                        <label class="form-check-label" for="profileVisibilityToggle">Keep my profile private (hide from directory)</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="pt-3">
+                            <button type="submit" class="btn btn-danger btn-lg w-100 py-3 fw-bold rounded-3 shadow">
+                                Submit Registration <i class="fa-solid fa-paper-plane ms-2"></i>
+                            </button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Success Modal Popup -->
+    <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true" data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 shadow-lg rounded-4">
+                <div class="modal-body p-5 text-center">
+                    <div class="d-flex align-items-center justify-content-center bg-success-subtle text-success rounded-circle mx-auto mb-4" style="width: 75px; height: 75px; font-size: 2.2rem;">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                    <h3 class="fw-bold mb-2">Registration Successful!</h3>
+                    <p class="text-secondary mb-4">Thank you for registering in the NPGC Alumni network. Your profile has been created successfully. Welcome to the family!</p>
+                    <button type="button" class="btn btn-danger btn-lg w-100 rounded-pill py-2.5 fw-bold" id="closeSuccessModalBtn">Go Back to Alumni Page</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/loadcomponents.js"></script>
+    <script src="../assets/js/main.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // Experience range selection is now handled via a native dropdown menu
+
+            // --- Textarea character counter ---
+            const bio = document.getElementById("bio");
+            const counter = document.getElementById("charCounter");
+            if (bio && counter) {
+                bio.addEventListener("input", (e) => {
+                    const remaining = 500 - e.target.value.length;
+                    counter.textContent = `${remaining} characters remaining`;
+                    if (remaining < 50) {
+                        counter.classList.add("text-danger");
+                    } else {
+                        counter.classList.remove("text-danger");
+                    }
+                });
+            }
+
+            // --- Form Validations & Submit handler ---
+            const form = document.getElementById("alumniRegForm");
+            const closeSuccessBtn = document.getElementById("closeSuccessModalBtn");
+
+            form.addEventListener("submit", (e) => {
+                e.preventDefault();
+
+                if (!form.checkValidity()) {
+                    e.stopPropagation();
+                    form.classList.add('was-validated');
+                } else {
+                    form.classList.remove('was-validated');
+                    // Show success modal natively via Bootstrap JS
+                    const modalEl = document.getElementById("successModal");
+                    const successModal = new bootstrap.Modal(modalEl);
+                    successModal.show();
+                }
+            });
+
+            // Close modal redirect
+            if (closeSuccessBtn) {
+                closeSuccessBtn.addEventListener("click", () => {
+                    // Redirect back to alumni page
+                    window.location.href = "alumni.html";
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
